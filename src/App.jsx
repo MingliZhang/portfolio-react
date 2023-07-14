@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import {
     About,
     Contact,
@@ -15,6 +16,7 @@ import {
 const App = () => {
     return (
         <BrowserRouter>
+            {/* <ToastContainer> */}
             <div className="relative z-0 bg-primary">
                 <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
                     <Navbar />
@@ -60,6 +62,7 @@ const App = () => {
                     />
                 </Routes>
             </div>
+            <ToastContainer />
         </BrowserRouter>
     );
 };

@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { toast } from "react-toastify";
 
 const Contact = () => {
     const formRef = useRef();
@@ -31,39 +32,59 @@ const Contact = () => {
         e.preventDefault();
         setLoading(true);
 
-        emailjs
-            .send(
-                import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-                import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-                {
-                    from_name: form.name,
-                    to_name: "Mike Zhang",
-                    from_email: form.email,
-                    to_email: "zml2416154671@gmail.com",
-                    message: form.message,
-                },
-                import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-            )
-            .then(
-                () => {
-                    setLoading(false);
-                    alert(
-                        "Thank you. I will get back to you as soon as possible."
+        if (form.name && form.email && form.message) {
+            if (
+                form.email.match(
+                    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+                )
+            ) {
+                emailjs
+                    .send(
+                        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+                        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+                        {
+                            from_name: form.name,
+                            to_name: "Mike Zhang",
+                            from_email: form.email,
+                            to_email: "minglizhang2000@outlook.com",
+                            message: form.message,
+                        },
+                        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+                    )
+                    .then(
+                        () => {
+                            setLoading(false);
+                            toast.success(
+                                "Thank you. I will get back to you as soon as possible.",
+                                { autoClose: 15000 }
+                            );
+
+                            setForm({
+                                name: "",
+                                email: "",
+                                message: "",
+                            });
+                        },
+                        (error) => {
+                            setLoading(false);
+                            toast.error(
+                                "Ahh, something went wrong. Please try again.",
+                                { autoClose: 15000 }
+                            );
+                        }
                     );
-
-                    setForm({
-                        name: "",
-                        email: "",
-                        message: "",
-                    });
-                },
-                (error) => {
-                    setLoading(false);
-                    console.error(error);
-
-                    alert("Ahh, something went wrong. Please try again.");
-                }
-            );
+            } else {
+                toast.warn("Please provide a valid email address!", {
+                    autoClose: 15000,
+                });
+                setLoading(false);
+            }
+        } else {
+            toast.warn("Please fill in all required fields!", {
+                autoClose: 15000,
+            });
+            setLoading(false);
+        }
     };
 
     return (
@@ -91,7 +112,7 @@ const Contact = () => {
                             name="name"
                             value={form.name}
                             onChange={handleChange}
-                            placeholder="What's your good name?"
+                            placeholder="What's your name?"
                             className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
                         />
                     </label>
@@ -104,7 +125,7 @@ const Contact = () => {
                             name="email"
                             value={form.email}
                             onChange={handleChange}
-                            placeholder="What's your web address?"
+                            placeholder="What's your email address?"
                             className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
                         />
                     </label>
