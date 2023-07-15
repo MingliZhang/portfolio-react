@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import resume from "../../documents/resume.pdf";
 
 const ServiceCard = ({ index, title, icon }) => (
     <Tilt className="xs:w-[250px] w-full">
@@ -38,6 +39,15 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
     return (
         <>
+            <div className="mt-20 gap-10  flex flex-col items-center justify-center">
+                <a
+                    className="border-violet-600 bg-transparent border-4 rounded-full hover:border-green-600 text-white font-bold py-4 px-8  text-center transition-color duration-500 "
+                    href={resume}
+                    target="_blank"
+                >
+                    Resume
+                </a>
+            </div>
             <motion.div variants={textVariant()}>
                 <p className={styles.sectionSubText}>Introduction</p>
                 <h2 className={styles.sectionHeadText}>Overview.</h2>

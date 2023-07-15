@@ -18,6 +18,10 @@ import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import firebase from "./tech/firebase.png";
+import C from "./tech/C.png";
+import Cpp from "./tech/C++.png";
+import unc from "./company/unc.png";
 
 import lenovo from "./company/lenovo.png";
 import ibm from "./company/ibm.png";
@@ -53,4 +57,8 @@ export {
     jobit,
     tripguide,
     lenovo,
+    firebase,
+    C,
+    Cpp,
+    unc,
 };

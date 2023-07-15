@@ -1,4 +1,11 @@
 import {
+    faLinkedin,
+    faInstagram,
+    faFacebook,
+    faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
     mobile,
     backend,
     creator,
@@ -20,19 +27,21 @@ import {
     tripguide,
     threejs,
     lenovo,
+    firebase,
+    C,
+    Cpp,
+    unc,
 } from "../assets";
 
-const intro = `I'm a skilled software developer with experience in TypeScript
-                and JavaScript, and expertise in frameworks like React, Node.js,
-                and Three.js. I'm a quick learner and collaborate closely with
-                clients to create efficient, scalable, and user-friendly
+const intro = `I'm a skilled software developer with experience in full stack web development, mobile application developement, and systems research. I'm a quick learner and collaborate closely with
+                teammates and clients to create efficient, scalable, and user-friendly
                 solutions that solve real-world problems. Let's work together to
                 bring your ideas to life!`;
 
 export const navLinks = [
     {
         id: "",
-        title: "About",
+        title: "Overview",
     },
     {
         id: "work",
@@ -48,6 +57,39 @@ export const navLinks = [
     },
 ];
 
+const contacts = [
+    {
+        link: "https://github.com/MingliZhang/",
+        icon: faGithub,
+        text: "@MingliZhang",
+    },
+    {
+        link: "https://www.facebook.com/mike.zhang.792303/",
+        icon: faFacebook,
+        text: "@Mike Zhang",
+    },
+    {
+        link: "https://www.instagram.com/mingli_zhang/",
+        icon: faInstagram,
+        text: "@Mingli Zhang",
+    },
+    {
+        link: "https://www.linkedin.com/in/mingli-zhang/",
+        icon: faLinkedin,
+        text: "@Mingli Zhang",
+    },
+    {
+        link: "mailto:minglizhang2000@outlook.com",
+        icon: faEnvelope,
+        text: "minglizhang2000@outlook.com",
+    },
+    {
+        link: "tel:9192745562",
+        icon: faPhone,
+        text: "(919)274-5562",
+    },
+];
+
 const services = [
     {
         title: "Full Stack Developer",
@@ -60,6 +102,10 @@ const services = [
     {
         title: "Researcher",
         icon: backend,
+    },
+    {
+        title: "Software Developer",
+        icon: creator,
     },
 ];
 
@@ -108,10 +154,18 @@ const technologies = [
         name: "Next JS",
         icon: next,
     },
-    // {
-    //     name: "docker",
-    //     icon: docker,
-    // },
+    {
+        name: "Firebase",
+        icon: firebase,
+    },
+    {
+        name: "C",
+        icon: C,
+    },
+    {
+        name: "C++",
+        icon: Cpp,
+    },
 ];
 const whiteBg = "#E6DEDD";
 const blackBg = "#383E56";
@@ -124,10 +178,10 @@ const experiences = [
         iconBg: whiteBg,
         date: "October 2021 - Jan 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Engineered, with a team of 5 developers,  a full-stack SaaS machine learning driven platform that integrated a WebRTC video conferencing app, an information retrieval app, and a core identity API. The platform played a key role in the company securing seed-round funding.",
+            "Incorporated Microsoft Azure into our platform as per our client's request, providing more flexible login choices and enabling seamless secured data transfer between our data retrieval app and Microsoft's cloud storage.",
+            "Utilized Socket.io to parallelize the real-time news analysis process in our data retrieval platform, leading to a 70% acceleration.",
+            "Strengthened our critical data update pipeline with the implementation of bash scripts, Python, and a Cron job, resulting in increased reliability.",
         ],
     },
     {
@@ -137,8 +191,20 @@ const experiences = [
         iconBg: whiteBg,
         date: "May 2021 - Aug 2021",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Improved user experience on a development environment management platform that supports 2000+ IBM developers each month.",
+            "Optimized administrative content tasks to reduce workload for developers, resulting in more than 10 times faster content updates and fewer required deployments.",
+            "Founded an automated validation service using Sails.js that reduced month of manual time to maintain the employee database",
+        ],
+    },
+    {
+        title: "Research Assistant",
+        company_name: "UNC - CH, LAIR ",
+        icon: unc,
+        iconBg: "#E6DEDD",
+        date: "April 2021 - May 2023",
+        points: [
+            "Established data visualization using Tableau for UNICEF to monitor health conduction of children and women across 200 countries.",
+            "Initiated a mobile application for a health data exchange platform using React Native and Flask Backend.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
@@ -148,60 +214,44 @@ const experiences = [
         company_name: "Lenovo",
         icon: lenovo,
         iconBg: whiteBg,
-        date: "May 2017 - Auguest 2017",
+        date: "June 2017 - Auguest 2017",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Designed Lenovo's B2B web store with Mocking-Bot (similar to Adobe XD), providing retailers with access to product information for over 1000 products, as well as remote technology support and restocking capabilities.",
+            "Negotiated with the marketing and human resources departments to determine the necessary resources for the completion of the project.",
         ],
     },
-
-    // {
-    //     title: "Full stack Developer",
-    //     company_name: "Meta",
-    //     icon: meta,
-    //     iconBg: "#E6DEDD",
-    //     date: "Jan 2023 - Present",
-    //     points: [
-    //         "Developing and maintaining web applications using React.js and other related technologies.",
-    //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //         "Implementing responsive design and ensuring cross-browser compatibility.",
-    //         "Participating in code reviews and providing constructive feedback to other developers.",
-    //     ],
-    // },
 ];
 
 const testimonials = [
-    // {
-    //     testimonial:
-    //         "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    //     name: "Sara Lee",
-    //     designation: "CFO",
-    //     company: "Acme Co",
-    //     image: "https://randomuser.me/api/portraits/women/4.jpg",
-    // },
-    // {
-    //     testimonial:
-    //         "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    //     name: "Chris Brown",
-    //     designation: "COO",
-    //     company: "DEF Corp",
-    //     image: "https://randomuser.me/api/portraits/men/5.jpg",
-    // },
-    // {
-    //     testimonial:
-    //         "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    //     name: "Lisa Wang",
-    //     designation: "CTO",
-    //     company: "456 Enterprises",
-    //     image: "https://randomuser.me/api/portraits/women/6.jpg",
-    // },
+    {
+        testimonial:
+            "I have the pleasure to work with Mingli throughout the time at UNC LAIR and Cymantix. With a solid foundation in CS and Math, Mingli has demonstrated outstanding capabilities in logical thinking. He's the software engineer that embodies genuine passion about knowledge, extraordinary learning speed and initiatives, and diligent working attitude. I could not recommend him enough!",
+        name: "Xinzhao Li",
+        designation: "Tech Lead",
+        company: "Cymantix",
+        image: "https://media.licdn.cn/dms/image/C4E03AQFQuIeI4eHquA/profile-displayphoto-shrink_400_400/0/1573494512736?e=1694649600&v=beta&t=qBVA77lIHcl5aYs6eqlYXlCNe5yhrpkvnAcpdLrAYZ8",
+    },
+    {
+        testimonial:
+            "Mingli worked on my project, Easy Access, as part of a advanced-level undergraduate course at UNC that matches teams of 3-4 upper-level computer science majors with software clients. Mingli single-handedly proposed and created a redesign of our back-end system using a sails.js framework connected to MongoDB. He showed great initiative in suggesting and designing changes to our system. Overall, Mingli is a highly skilled, diligent, and innovative programmer, good communicator, and a hard worker. I would highly recommend him for any project, job, or graduate program. It was a pleasure working with Mingli. Thank you so much for your help!",
+        name: "Vitaly Radsky",
+        designation: "COO",
+        company: "Easy Access",
+        image: "https://media.licdn.cn/dms/image/C4E03AQGnvEODnb-32A/profile-displayphoto-shrink_400_400/0/1546453608433?e=1694649600&v=beta&t=3WbKD7k7SfIyl1UCgTeCPOUbLses099X9GYTMDN--oY",
+    },
+    {
+        testimonial:
+            "Mingli has an impressive ability to learn quickly, which  experienced first-hand during his 11-week internship at IBM this past summer. Mingli joined the development team that project I managed and within just a few weeks he picked up our front-end and back-end frameworks. After only a month, Mingli was assigned bigger projects to automate and streamline manual tasks. He managed this while still delivering front-end enhancements to improve our user's experience while navigating our site, IBM Technology Zone. I realized quickly Mingli was dedicated, hard-working, and could think out of the box. He was always open to trying something new, providing feedback, and contributing his innovative solutions to support our team's initiatives. Mingli also is so much fun to work with. Mingli's personality shined this summer as he was able to make connections with a whole remote working team and fit right in. I would have no hesitation in recommending Mingli to any potential company seeking new talent.",
+        name: "Brooke Jones",
+        designation: "Product Manager",
+        company: "IBM",
+        image: "https://media.licdn.cn/dms/image/C4E03AQGOBHLaZGeegA/profile-displayphoto-shrink_400_400/0/1638124922331?e=1694649600&v=beta&t=lJogkDQgzxagezCl75gltQ-pzdzo2S-mAcsoKyk79Hg",
+    },
 ];
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "ChampionPDI",
         description:
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
         tags: [
@@ -210,7 +260,7 @@ const projects = [
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "firebase",
                 color: "green-text-gradient",
             },
             {
@@ -222,7 +272,7 @@ const projects = [
         source_code_link: "https://github.com/",
     },
     {
-        name: "Job IT",
+        name: "Social Web App",
         description:
             "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
         tags: [
@@ -243,7 +293,154 @@ const projects = [
         source_code_link: "https://github.com/",
     },
     {
-        name: "Trip Guide",
+        name: "Fake News Detection",
+        description:
+            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        tags: [
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "supabase",
+                color: "green-text-gradient",
+            },
+            {
+                name: "css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: tripguide,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "One Pixel Attack Defense",
+        description:
+            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        tags: [
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "supabase",
+                color: "green-text-gradient",
+            },
+            {
+                name: "css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: tripguide,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "SplinterDB",
+        description:
+            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        tags: [
+            {
+                name: "C",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "KV store",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Research",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: tripguide,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "HDX",
+        description:
+            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        tags: [
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "supabase",
+                color: "green-text-gradient",
+            },
+            {
+                name: "css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: tripguide,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "Easy Access",
+        description:
+            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        tags: [
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "supabase",
+                color: "green-text-gradient",
+            },
+            {
+                name: "css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: tripguide,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "First Portfolio",
+        description:
+            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        tags: [
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "supabase",
+                color: "green-text-gradient",
+            },
+            {
+                name: "css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: tripguide,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "Next Portfolio",
+        description:
+            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        tags: [
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "supabase",
+                color: "green-text-gradient",
+            },
+            {
+                name: "css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: tripguide,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "This Portfolio",
         description:
             "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
         tags: [
@@ -265,4 +462,12 @@ const projects = [
     },
 ];
 
-export { intro, services, technologies, experiences, testimonials, projects };
+export {
+    intro,
+    services,
+    technologies,
+    experiences,
+    testimonials,
+    projects,
+    contacts,
+};
