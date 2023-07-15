@@ -1,6 +1,7 @@
 {
     "hosting": {
         "public": "dist",
+        "site": "minglizhang-react",
         "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
         "frameworksBackend": {
             "region": "us-central1"

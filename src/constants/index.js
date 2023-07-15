@@ -13,14 +13,21 @@ import {
     mongodb,
     git,
     next,
-    docker,
-    meta,
+    cymantix,
     ibm,
     carrent,
     jobit,
     tripguide,
     threejs,
+    lenovo,
 } from "../assets";
+
+const intro = `I'm a skilled software developer with experience in TypeScript
+                and JavaScript, and expertise in frameworks like React, Node.js,
+                and Three.js. I'm a quick learner and collaborate closely with
+                clients to create efficient, scalable, and user-friendly
+                solutions that solve real-world problems. Let's work together to
+                bring your ideas to life!`;
 
 export const navLinks = [
     {
@@ -101,32 +108,21 @@ const technologies = [
         name: "Next JS",
         icon: next,
     },
-    {
-        name: "docker",
-        icon: docker,
-    },
+    // {
+    //     name: "docker",
+    //     icon: docker,
+    // },
 ];
+const whiteBg = "#E6DEDD";
+const blackBg = "#383E56";
 
 const experiences = [
-    // {
-    //     title: "React.js Developer",
-    //     company_name: "Starbucks",
-    //     icon: starbucks,
-    //     iconBg: "#383E56",
-    //     date: "March 2020 - April 2021",
-    //     points: [
-    //         "Developing and maintaining web applications using React.js and other related technologies.",
-    //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //         "Implementing responsive design and ensuring cross-browser compatibility.",
-    //         "Participating in code reviews and providing constructive feedback to other developers.",
-    //     ],
-    // },
     {
-        title: "Full Stack Enginner Summer Intern",
-        company_name: "IBM",
-        icon: ibm,
-        iconBg: "#E6DEDD",
-        date: "may 2021 - Aug 2021",
+        title: "Software Developer",
+        company_name: "Cymantix",
+        icon: cymantix,
+        iconBg: whiteBg,
+        date: "October 2021 - Jan 2023",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -134,19 +130,33 @@ const experiences = [
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
-    // {
-    //     title: "Web Developer",
-    //     company_name: "Shopify",
-    //     icon: shopify,
-    //     iconBg: "#383E56",
-    //     date: "Jan 2022 - Jan 2023",
-    //     points: [
-    //         "Developing and maintaining web applications using React.js and other related technologies.",
-    //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //         "Implementing responsive design and ensuring cross-browser compatibility.",
-    //         "Participating in code reviews and providing constructive feedback to other developers.",
-    //     ],
-    // },
+    {
+        title: "Full Stack Enginner Summer Intern",
+        company_name: "IBM",
+        icon: ibm,
+        iconBg: whiteBg,
+        date: "May 2021 - Aug 2021",
+        points: [
+            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+        title: "UI/UX Designer Summer Intern",
+        company_name: "Lenovo",
+        icon: lenovo,
+        iconBg: whiteBg,
+        date: "May 2017 - Auguest 2017",
+        points: [
+            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+
     // {
     //     title: "Full stack Developer",
     //     company_name: "Meta",
@@ -255,4 +265,4 @@ const projects = [
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { intro, services, technologies, experiences, testimonials, projects };
