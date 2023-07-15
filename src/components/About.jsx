@@ -41,7 +41,7 @@ const About = () => {
         <>
             <div className="mt-20 gap-10  flex flex-col items-center justify-center">
                 <a
-                    className="border-violet-600 bg-transparent border-4 rounded-full hover:border-green-600 text-white font-bold py-4 px-8  text-center transition-color duration-500 "
+                    className="border-violet-600 bg-transparent border-4 rounded-full hover:border-green-600 text-white font-bold py-4 px-20 text-center transition-color duration-500 "
                     href={resume}
                     target="_blank"
                 >

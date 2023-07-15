@@ -253,7 +253,7 @@ const projects = [
     {
         name: "ChampionPDI",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Web-based platform designed for cutco that allows its sells agents to manage demos and prospects, and managers to view, monitor and better support their agents. I am the tech lead of this project and lead a 6 person devleopment team.",
         tags: [
             {
                 name: "react",
@@ -264,7 +264,7 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "Git",
                 color: "pink-text-gradient",
             },
         ],
@@ -272,12 +272,11 @@ const projects = [
         source_code_link: "https://github.com/",
     },
     {
-        name: "Social Web App",
-        description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        name: "Miao Miao Social App",
+        description: "",
         tags: [
             {
-                name: "react",
+                name: "firebase",
                 color: "blue-text-gradient",
             },
             {
@@ -285,7 +284,7 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "HTML,CSS,&JS",
                 color: "pink-text-gradient",
             },
         ],
@@ -294,50 +293,48 @@ const projects = [
     },
     {
         name: "Fake News Detection",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        description: "",
         tags: [
             {
-                name: "nextjs",
+                name: "sklearn",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "python",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "Jupyter Notebook",
                 color: "pink-text-gradient",
             },
         ],
         image: tripguide,
-        source_code_link: "https://github.com/",
+        source_code_link:
+            "https://github.com/MingliZhang/COMP-562-Final-Project",
     },
     {
         name: "One Pixel Attack Defense",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        description: "",
         tags: [
             {
-                name: "nextjs",
+                name: "PyTourch",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "Python",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "Image Processing",
                 color: "pink-text-gradient",
             },
         ],
         image: tripguide,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/MingliZhang/comp-755-final",
     },
     {
         name: "SplinterDB",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        description: "",
         tags: [
             {
                 name: "C",
@@ -353,45 +350,47 @@ const projects = [
             },
         ],
         image: tripguide,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/vmware/splinterdb",
     },
     {
         name: "HDX",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        description: "",
         tags: [
             {
-                name: "nextjs",
+                name: "React Native",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "AWS",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "Flask",
                 color: "pink-text-gradient",
             },
         ],
         image: tripguide,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/MingliZhang/hdxMobile",
     },
     {
         name: "Easy Access",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        description: "",
         tags: [
             {
-                name: "nextjs",
+                name: "Sails JS",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "React JS",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "MongoDB",
                 color: "pink-text-gradient",
+            },
+            {
+                name: "Firebase",
+                color: "red-text-gradient",
             },
         ],
         image: tripguide,
@@ -399,19 +398,18 @@ const projects = [
     },
     {
         name: "First Portfolio",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        description: "",
         tags: [
             {
-                name: "nextjs",
+                name: "HTML",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "CSS",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "JavaScript",
                 color: "pink-text-gradient",
             },
         ],
@@ -420,19 +418,18 @@ const projects = [
     },
     {
         name: "Next Portfolio",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        description: "",
         tags: [
             {
-                name: "nextjs",
+                name: "Next JS",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "firebase",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "TailwindCSS",
                 color: "pink-text-gradient",
             },
         ],
@@ -441,19 +438,22 @@ const projects = [
     },
     {
         name: "This Portfolio",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        description: "",
         tags: [
             {
-                name: "nextjs",
+                name: "React",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "Email JS",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "TailwindCSS",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "Three JS",
                 color: "pink-text-gradient",
             },
         ],
