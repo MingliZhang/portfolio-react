@@ -22,15 +22,28 @@ import {
     next,
     cymantix,
     ibm,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     lenovo,
     firebase,
     C,
     Cpp,
     unc,
+    attack,
+    CD2030,
+    championpdi,
+    covid,
+    easyAccess,
+    firstPortfolio,
+    game,
+    graphics,
+    hdxMobile,
+    miaomiao,
+    news,
+    nextPortfolio,
+    pattie,
+    seamCarving,
+    splinterDB,
+    thisPortfolio,
 } from "../assets";
 
 const intro = `I'm a skilled software developer with experience in full stack web development, mobile application developement, and systems research. I'm a quick learner and collaborate closely with
@@ -268,7 +281,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
+        image: championpdi,
         source_code_link: "https://github.com/",
     },
     {
@@ -288,7 +301,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
+        image: miaomiao,
         source_code_link: "https://github.com/",
     },
     {
@@ -308,7 +321,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
+        image: news,
         source_code_link:
             "https://github.com/MingliZhang/COMP-562-Final-Project",
     },
@@ -329,7 +342,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
+        image: attack,
         source_code_link: "https://github.com/MingliZhang/comp-755-final",
     },
     {
@@ -349,7 +362,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
+        image: splinterDB,
         source_code_link: "https://github.com/vmware/splinterdb",
     },
     {
@@ -369,7 +382,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
+        image: hdxMobile,
         source_code_link: "https://github.com/MingliZhang/hdxMobile",
     },
     {
@@ -393,7 +406,7 @@ const projects = [
                 color: "red-text-gradient",
             },
         ],
-        image: tripguide,
+        image: easyAccess,
         source_code_link: "https://github.com/",
     },
     {
@@ -413,7 +426,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
+        image: firstPortfolio,
         source_code_link: "https://github.com/",
     },
     {
@@ -433,7 +446,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
+        image: nextPortfolio,
         source_code_link: "https://github.com/",
     },
     {
@@ -457,7 +470,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
+        image: thisPortfolio,
         source_code_link: "https://github.com/",
     },
 ];
