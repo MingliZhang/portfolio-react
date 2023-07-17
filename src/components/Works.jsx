@@ -28,7 +28,7 @@ const ProjectCard = ({ index, name, description, tags, image, links }) => {
                     {links.length !== 0 ? (
                         links.length === 1 ? (
                             <div
-                                key={index}
+                                key={`${links[0].link}-${index}`}
                                 className={`absolute inset-0 flex justify-end m-3 card-img_hover`}
                             >
                                 <div
@@ -47,7 +47,7 @@ const ProjectCard = ({ index, name, description, tags, image, links }) => {
                         ) : (
                             <>
                                 <div
-                                    key={index}
+                                    key={`${links[0].link}-${index}`}
                                     className={`absolute inset-0 flex justify-end m-3 card-img_hover`}
                                 >
                                     <div
@@ -64,7 +64,7 @@ const ProjectCard = ({ index, name, description, tags, image, links }) => {
                                     </div>
                                 </div>
                                 <div
-                                    key={index}
+                                    key={`${links[1].link}-${index}`}
                                     className={`absolute inset-0 flex justify-end mx-16 my-3 card-img_hover`}
                                 >
                                     <div
@@ -121,7 +121,6 @@ const Works = () => {
                     className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
                 >
                     {projectIntro}
-                    
                 </motion.p>
             </div>
 
