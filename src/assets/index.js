@@ -7,7 +7,7 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import website from "./website.png";
-import doc from "./doc.png";
+import docIcon from "./docIcon.png";
 
 import css from "./tech/css.png";
 import next from "./tech/next.png";
@@ -57,7 +57,7 @@ export {
     menu,
     close,
     website,
-    doc,
+    docIcon,
     css,
     next,
     git,

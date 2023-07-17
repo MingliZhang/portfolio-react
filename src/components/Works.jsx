@@ -1,16 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-
+import { github, website, docIcon } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects, projectIntro } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({ index, name, description, tags, image, links }) => {
+const ProjectCard = ({
+    index,
+    name,
+    description,
+    tags,
+    image,
+    githubLink,
+    site,
+    doc,
+}) => {
     return (
-        <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{
+                type: "spring",
+                delay: (index * 0.5) % 3,
+                duration: 0.75,
+                ease: "easeOut",
+            }}
+            variants={{
+                visible: { x: 0, y: 0, opacity: 1 },
+                hidden: { x: 0, y: 100, opacity: 0 },
+            }}
+        >
             <Tilt
                 options={{
                     max: 45,
@@ -25,63 +48,50 @@ const ProjectCard = ({ index, name, description, tags, image, links }) => {
                         alt="project_image"
                         className="w-full h-full object-cover rounded-2xl"
                     />
-                    {links.length !== 0 ? (
-                        links.length === 1 ? (
+
+                    {githubLink ? (
+                        <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
                             <div
-                                key={`${links[0].link}-${index}`}
-                                className={`absolute inset-0 flex justify-end m-3 card-img_hover`}
+                                onClick={() =>
+                                    window.open(githubLink, "_blank")
+                                }
+                                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
                             >
-                                <div
-                                    onClick={() =>
-                                        window.open(links[0].link, "_blank")
-                                    }
-                                    className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-                                >
-                                    <img
-                                        src={links[0].image}
-                                        alt="source code"
-                                        className="w-1/2 h-1/2 object-contain"
-                                    />
-                                </div>
+                                <img
+                                    src={github}
+                                    alt="source code"
+                                    className="w-1/2 h-1/2 object-contain"
+                                />
                             </div>
-                        ) : (
-                            <>
-                                <div
-                                    key={`${links[0].link}-${index}`}
-                                    className={`absolute inset-0 flex justify-end m-3 card-img_hover`}
-                                >
-                                    <div
-                                        onClick={() =>
-                                            window.open(links[0].link, "_blank")
-                                        }
-                                        className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-                                    >
-                                        <img
-                                            src={links[0].image}
-                                            alt="source code"
-                                            className="w-1/2 h-1/2 object-contain"
-                                        />
-                                    </div>
-                                </div>
-                                <div
-                                    key={`${links[1].link}-${index}`}
-                                    className={`absolute inset-0 flex justify-end mx-16 my-3 card-img_hover`}
-                                >
-                                    <div
-                                        onClick={() =>
-                                            window.open(links[1].link, "_blank")
-                                        }
-                                        className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-                                    >
-                                        <img
-                                            src={links[1].image}
-                                            alt="source code"
-                                            className="w-1/2 h-1/2 object-contain"
-                                        />
-                                    </div>
-                                </div>
-                            </>
-                        )
+                        </div>
+                    ) : null}
+                    {site ? (
+                        <div className="absolute inset-0 flex justify-end mx-16 my-3 card-img_hover">
+                            <div
+                                onClick={() => window.open(site, "_blank")}
+                                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                            >
+                                <img
+                                    src={website}
+                                    alt="source code"
+                                    className="w-1/2 h-1/2 object-contain"
+                                />
+                            </div>
+                        </div>
+                    ) : null}
+                    {doc ? (
+                        <div className="absolute inset-0 flex justify-end mx-16 my-3 card-img_hover">
+                            <div
+                                onClick={() => window.open(doc, "_blank")}
+                                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                            >
+                                <img
+                                    src={docIcon}
+                                    alt="source code"
+                                    className="w-1/2 h-1/2 object-contain"
+                                />
+                            </div>
+                        </div>
                     ) : null}
                 </div>
 
@@ -108,6 +118,10 @@ const ProjectCard = ({ index, name, description, tags, image, links }) => {
 };
 
 const Works = () => {
+    const [displayNum, setDisplayNum] = useState(6);
+    const handleMoreItem = () => {
+        setDisplayNum(displayNum + 6);
+    };
     return (
         <>
             <motion.div variants={textVariant()}>
@@ -125,7 +139,7 @@ const Works = () => {
             </div>
 
             <div className="mt-20 flex flex-wrap gap-7">
-                {projects.map((project, index) => (
+                {projects?.slice(0, displayNum)?.map((project, index) => (
                     <ProjectCard
                         key={`project-${index}`}
                         index={index}
@@ -133,6 +147,16 @@ const Works = () => {
                     />
                 ))}
             </div>
+            {displayNum < projects?.length && (
+                <div className="mt-20 gap-10  flex flex-col items-center justify-center">
+                    <button
+                        className="border-violet-600 bg-transparent border-4 rounded-full hover:border-green-600 text-white font-bold py-4 px-20 text-center transition-color duration-500"
+                        onClick={handleMoreItem}
+                    >
+                        Load more
+                    </button>
+                </div>
+            )}
         </>
     );
 };

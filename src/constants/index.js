@@ -45,9 +45,6 @@ import {
     seamCarving,
     splinterDB,
     thisPortfolio,
-    github,
-    website,
-    doc,
 } from "../assets";
 import { attackReport, newsReport } from "../../documents";
 
@@ -268,7 +265,8 @@ const testimonials = [
 ];
 
 const projectIntro =
-    "Following projects showcases my skills and experience through work/research projects and school projects. Each project is briefly described with links to code repositories as well as research result paper or live demos in it if avaliable. It reflects my ability to solve complex problems, work with different technologies, and lead development teams to deliver on time.";
+  "Following projects showcases my skills and experience through work/research projects and school projects. Each project is briefly described with links to code repositories as well as research result paper or live demos in it if avaliable. It reflects my ability to solve complex problems, work with different technologies, and lead development teams to deliver on time.";
+    
 const projects = [
     {
         name: "IBM's Tech Zone",
@@ -289,12 +287,8 @@ const projects = [
             },
         ],
         image: techZone,
-        links: [
-            {
-                link: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjEnL2Q6JSAAxWWZ_UHHSSbCnEQFnoECBIQAQ&url=https%3A%2F%2Ftechzone.ibm.com%2F&usg=AOvVaw3f1u0N_QY5xma7nAQeW-hV&opi=89978449",
-                image: website,
-            },
-        ],
+        githubLink:
+            "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjEnL2Q6JSAAxWWZ_UHHSSbCnEQFnoECBIQAQ&url=https%3A%2F%2Ftechzone.ibm.com%2F&usg=AOvVaw3f1u0N_QY5xma7nAQeW-hV&opi=89978449",
     },
     {
         name: "ChampionPDI",
@@ -315,7 +309,7 @@ const projects = [
             },
         ],
         image: championpdi,
-        links: [{ link: "https://championpdi.web.app/", image: website }],
+        site: "https://championpdi.web.app/",
     },
     {
         name: "Pattie",
@@ -340,7 +334,6 @@ const projects = [
             },
         ],
         image: pattie,
-        links: [],
     },
     {
         name: "Miao Miao Social App",
@@ -361,10 +354,8 @@ const projects = [
             },
         ],
         image: miaomiao,
-        links: [
-            { link: "https://github.com/MingliZhang/final_426", image: github },
-            { link: "https://comp426-firebase.web.app/", image: website },
-        ],
+        githubLink: "https://github.com/MingliZhang/final_426",
+        site: "https://comp426-firebase.web.app/",
     },
     {
         name: "Fake News Detection",
@@ -385,16 +376,8 @@ const projects = [
             },
         ],
         image: news,
-        links: [
-            {
-                link: "https://github.com/MingliZhang/COMP-562-Final-Project",
-                image: github,
-            },
-            {
-                link: newsReport,
-                image: doc,
-            },
-        ],
+        githubLink: "https://github.com/MingliZhang/COMP-562-Final-Project",
+        doc: newsReport,
     },
     {
         name: "One Pixel Attack Defense",
@@ -415,13 +398,8 @@ const projects = [
             },
         ],
         image: attack,
-        links: [
-            {
-                link: "https://github.com/MingliZhang/comp-755-final",
-                image: github,
-            },
-            { link: attackReport, image: doc },
-        ],
+        githubLink: "https://github.com/MingliZhang/comp-755-final",
+        doc: attackReport,
     },
     {
         name: "SplinterDB",
@@ -442,9 +420,7 @@ const projects = [
             },
         ],
         image: splinterDB,
-        links: [
-            { link: "https://github.com/vmware/splinterdb", image: github },
-        ],
+        githubLink: "https://github.com/vmware/splinterdb",
     },
     {
         name: "2D Graphics",
@@ -469,12 +445,7 @@ const projects = [
             },
         ],
         image: graphics,
-        links: [
-            {
-                link: "https://github.com/MingliZhang/COMP-475",
-                image: github,
-            },
-        ],
+        githubLink: "https://github.com/MingliZhang/COMP-475",
     },
     {
         name: "Seam Carving",
@@ -491,16 +462,8 @@ const projects = [
             },
         ],
         image: seamCarving,
-        links: [
-            {
-                link: "https://github.com/MingliZhang/COMP-572",
-                image: github,
-            },
-            {
-                link: "https://www.youtube.com/watch?v=K0JNBQBAtys",
-                image: website,
-            },
-        ],
+        githubLink: "https://github.com/MingliZhang/COMP-572",
+        site: "https://www.youtube.com/watch?v=K0JNBQBAtys",
     },
     {
         name: "COUNTDOWN2030",
@@ -517,9 +480,7 @@ const projects = [
             },
         ],
         image: CD2030,
-        links: [
-            { link: "https://data.unicef.org/countdown-2030/", image: website },
-        ],
+        site: "https://data.unicef.org/countdown-2030/",
     },
     {
         name: "HDX",
@@ -540,9 +501,9 @@ const projects = [
             },
         ],
         image: hdxMobile,
-        links: [
-            { link: "https://github.com/MingliZhang/hdxMobile", image: github },
-        ],
+    
+        githubLink: "https://github.com/MingliZhang/hdxMobile",
+    
     },
     {
         name: "Easy Access",
@@ -567,16 +528,10 @@ const projects = [
             },
         ],
         image: easyAccess,
-        links: [
-            {
-                link: "https://github.com/viradsky/EasyAccessCounselor",
-                image: github,
-            },
-            {
-                link: "https://counselors.easyaccess.education/",
-                image: website,
-            },
-        ],
+        githubLink: "https://github.com/viradsky/EasyAccessCounselor",
+    
+                site: "https://counselors.easyaccess.education/",
+    
     },
     {
         name: "How to get away from Covid 19",
@@ -601,12 +556,8 @@ const projects = [
             },
         ],
         image: covid,
-        links: [
-            {
-                link: "https://github.com/MingliZhang/How-to-Get-Away-from-Covid-19",
-                image: github,
-            },
-        ],
+        githubLink: "https://github.com/MingliZhang/How-to-Get-Away-from-Covid-19",
+    
     },
     {
         name: "2048",
@@ -623,16 +574,10 @@ const projects = [
             },
         ],
         image: game,
-        links: [
-            {
-                link: "https://github.com/MingliZhang/2048",
-                image: github,
-            },
-            {
-                link: "https://minglizhang-first.web.app/2048/index.html",
-                image: website,
-            },
-        ],
+       githubLink: "https://github.com/MingliZhang/2048",
+    
+                site: "https://minglizhang-first.web.app/2048/index.html",
+    
     },
     {
         name: "First Portfolio",
@@ -653,10 +598,9 @@ const projects = [
             },
         ],
         image: firstPortfolio,
-        links: [
-            { link: "https://github.com/MingliZhang/portfolio", image: github },
-            { link: "https://minglizhang-first.web.app/", image: website },
-        ],
+        githubLink: "https://github.com/MingliZhang/portfolio",
+           site: "https://minglizhang-first.web.app/",
+    
     },
     {
         name: "Next Portfolio",
@@ -677,13 +621,7 @@ const projects = [
             },
         ],
         image: nextPortfolio,
-        links: [
-            {
-                link: "https://github.com/MingliZhang/portfolio-next",
-                image: github,
-            },
-            { link: "https://minglizhang-next.web.app/", image: website },
-        ],
+        githubLink: "https://github.com/MingliZhang/portfolio-next", site: "https://minglizhang-next.web.app/",
     },
     {
         name: "This Portfolio",
@@ -708,13 +646,8 @@ const projects = [
             },
         ],
         image: thisPortfolio,
-        links: [
-            {
-                link: "https://github.com/MingliZhang/portfolio-react",
-                image: github,
-            },
-            { link: "https://minglizhang.com/", image: website },
-        ],
+        githubLink: "https://github.com/MingliZhang/portfolio-react",
+            site: "https://minglizhang.com/",
     },
 ];
 
