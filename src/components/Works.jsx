@@ -3,19 +3,12 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({
-    index,
-    name,
-    description,
-    tags,
-    image,
-    source_code_link,
-}) => {
+const ProjectCard = ({ index, name, description, tags, image, links }) => {
     return (
         <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
             <Tilt
@@ -32,21 +25,64 @@ const ProjectCard = ({
                         alt="project_image"
                         className="w-full h-full object-cover rounded-2xl"
                     />
-
-                    <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-                        <div
-                            onClick={() =>
-                                window.open(source_code_link, "_blank")
-                            }
-                            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-                        >
-                            <img
-                                src={github}
-                                alt="source code"
-                                className="w-1/2 h-1/2 object-contain"
-                            />
-                        </div>
-                    </div>
+                    {links.length !== 0 ? (
+                        links.length === 1 ? (
+                            <div
+                                key={index}
+                                className={`absolute inset-0 flex justify-end m-3 card-img_hover`}
+                            >
+                                <div
+                                    onClick={() =>
+                                        window.open(links[0].link, "_blank")
+                                    }
+                                    className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                                >
+                                    <img
+                                        src={links[0].image}
+                                        alt="source code"
+                                        className="w-1/2 h-1/2 object-contain"
+                                    />
+                                </div>
+                            </div>
+                        ) : (
+                            <>
+                                <div
+                                    key={index}
+                                    className={`absolute inset-0 flex justify-end m-3 card-img_hover`}
+                                >
+                                    <div
+                                        onClick={() =>
+                                            window.open(links[0].link, "_blank")
+                                        }
+                                        className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                                    >
+                                        <img
+                                            src={links[0].image}
+                                            alt="source code"
+                                            className="w-1/2 h-1/2 object-contain"
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    key={index}
+                                    className={`absolute inset-0 flex justify-end mx-16 my-3 card-img_hover`}
+                                >
+                                    <div
+                                        onClick={() =>
+                                            window.open(links[1].link, "_blank")
+                                        }
+                                        className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                                    >
+                                        <img
+                                            src={links[1].image}
+                                            alt="source code"
+                                            className="w-1/2 h-1/2 object-contain"
+                                        />
+                                    </div>
+                                </div>
+                            </>
+                        )
+                    ) : null}
                 </div>
 
                 <div className="mt-5">

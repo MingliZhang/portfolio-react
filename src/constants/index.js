@@ -44,7 +44,11 @@ import {
     seamCarving,
     splinterDB,
     thisPortfolio,
+    github,
+    website,
+    doc,
 } from "../assets";
+import { attackReport, newsReport } from "../../documents";
 
 const intro = `I'm a skilled software developer with experience in full stack web development, mobile application developement, and systems research. I'm a quick learner and collaborate closely with
                 teammates and clients to create efficient, scalable, and user-friendly
@@ -282,11 +286,37 @@ const projects = [
             },
         ],
         image: championpdi,
-        source_code_link: "https://github.com/",
+        links: [{ link: "https://championpdi.web.app/", image: website }],
+    },
+    {
+        name: "Pattie",
+        description:
+            "A machine learning based search engine for medical documents. It clusters results so that users can find the document they need more acurratly and efficently. I was a software developer on the project and helped secure seed role funding.",
+        tags: [
+            {
+                name: "Sklearn",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Flask",
+                color: "green-text-gradient",
+            },
+            {
+                name: "React",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "PyScript",
+                color: "orange-text-gradient",
+            },
+        ],
+        image: pattie,
+        links: [],
     },
     {
         name: "Miao Miao Social App",
-        description: "",
+        description:
+            "A social platform that supports chat through sockets and some games to compete with each other. I lead a team of 4 peers to finish this end of course project and demonstrated our web dev abilities.",
         tags: [
             {
                 name: "firebase",
@@ -302,11 +332,14 @@ const projects = [
             },
         ],
         image: miaomiao,
-        source_code_link: "https://github.com/",
+        links: [
+            { link: "https://github.com/MingliZhang/final_426", image: github },
+        ],
     },
     {
         name: "Fake News Detection",
-        description: "",
+        description:
+            "Collaborated with three classmates, used logistic regression, Naive Bayes, support vector machine, and LSTM to train the computer to distinguish between real and fake news. We also compared the accuracy of each model. The data is from Kaggle.",
         tags: [
             {
                 name: "sklearn",
@@ -322,8 +355,16 @@ const projects = [
             },
         ],
         image: news,
-        source_code_link:
-            "https://github.com/MingliZhang/COMP-562-Final-Project",
+        links: [
+            {
+                link: "https://github.com/MingliZhang/COMP-562-Final-Project",
+                image: github,
+            },
+            {
+                link: newsReport,
+                image: doc,
+            },
+        ],
     },
     {
         name: "One Pixel Attack Defense",
@@ -343,7 +384,13 @@ const projects = [
             },
         ],
         image: attack,
-        source_code_link: "https://github.com/MingliZhang/comp-755-final",
+        links: [
+            {
+                link: "https://github.com/MingliZhang/comp-755-final",
+                image: github,
+            },
+            { link: attackReport, image: doc },
+        ],
     },
     {
         name: "SplinterDB",
@@ -363,7 +410,83 @@ const projects = [
             },
         ],
         image: splinterDB,
-        source_code_link: "https://github.com/vmware/splinterdb",
+        links: [
+            { link: "https://github.com/vmware/splinterdb", image: github },
+        ],
+    },
+    {
+        name: "2D Graphics",
+        description:
+            "Implemented a C++ graphics library that can draw polygons, shaders, and much more.",
+        tags: [
+            {
+                name: "Sails JS",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "React JS",
+                color: "green-text-gradient",
+            },
+            {
+                name: "MongoDB",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "Firebase",
+                color: "orange-text-gradient",
+            },
+        ],
+        image: graphics,
+        links: [
+            {
+                link: "https://github.com/MingliZhang/COMP-475",
+                image: github,
+            },
+        ],
+    },
+    {
+        name: "Seam Carving",
+        description:
+            "A 'smart' way to perform image resizing without loosing much important information by utalizing a per pixel weight map and dynamic programming.",
+        tags: [
+            {
+                name: "Matlab",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Dynamic Programming",
+                color: "green-text-gradient",
+            },
+        ],
+        image: seamCarving,
+        links: [
+            {
+                link: "https://github.com/MingliZhang/COMP-572",
+                image: github,
+            },
+            {
+                link: "https://www.youtube.com/watch?v=K0JNBQBAtys",
+                image: website,
+            },
+        ],
+    },
+    {
+        name: "COUNTDOWN2030",
+        description: "",
+        tags: [
+            {
+                name: "Tableau",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Wordpress",
+                color: "green-text-gradient",
+            },
+        ],
+        image: CD2030,
+        links: [
+            { link: "https://data.unicef.org/countdown-2030/", image: website },
+        ],
     },
     {
         name: "HDX",
@@ -383,7 +506,9 @@ const projects = [
             },
         ],
         image: hdxMobile,
-        source_code_link: "https://github.com/MingliZhang/hdxMobile",
+        links: [
+            { link: "https://github.com/MingliZhang/hdxMobile", image: github },
+        ],
     },
     {
         name: "Easy Access",
@@ -407,7 +532,75 @@ const projects = [
             },
         ],
         image: easyAccess,
-        source_code_link: "https://github.com/",
+        links: [
+            {
+                link: "https://github.com/viradsky/EasyAccessCounselor",
+                image: github,
+            },
+        ],
+    },
+    {
+        name: "How to get away from Covid 19",
+        description:
+            "Project for the 2020 fall Hackathon. Created with three others within 24 hours. The web app consisits of a covide-related game and a physical timer for washing hands.",
+        tags: [
+            {
+                name: "Sails JS",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "React JS",
+                color: "green-text-gradient",
+            },
+            {
+                name: "MongoDB",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "Firebase",
+                color: "red-text-gradient",
+            },
+        ],
+        image: covid,
+        links: [
+            {
+                link: "https://github.com/MingliZhang/How-to-Get-Away-from-Covid-19",
+                image: github,
+            },
+        ],
+    },
+    {
+        name: "2048",
+        description: "",
+        tags: [
+            {
+                name: "Sails JS",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "React JS",
+                color: "green-text-gradient",
+            },
+            {
+                name: "MongoDB",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "Firebase",
+                color: "red-text-gradient",
+            },
+        ],
+        image: game,
+        links: [
+            {
+                link: "https://github.com/MingliZhang/2048",
+                image: github,
+            },
+            {
+                link: "https://minglizhang-first.web.app/2048/index.html",
+                image: website,
+            },
+        ],
     },
     {
         name: "First Portfolio",
@@ -427,7 +620,10 @@ const projects = [
             },
         ],
         image: firstPortfolio,
-        source_code_link: "https://github.com/",
+        links: [
+            { link: "https://github.com/MingliZhang/portfolio", image: github },
+            { link: "https://minglizhang-first.web.app/", image: website },
+        ],
     },
     {
         name: "Next Portfolio",
@@ -447,7 +643,13 @@ const projects = [
             },
         ],
         image: nextPortfolio,
-        source_code_link: "https://github.com/",
+        links: [
+            {
+                link: "https://github.com/MingliZhang/portfolio-next",
+                image: github,
+            },
+            { link: "https://minglizhang-next.web.app/", image: website },
+        ],
     },
     {
         name: "This Portfolio",
@@ -471,7 +673,13 @@ const projects = [
             },
         ],
         image: thisPortfolio,
-        source_code_link: "https://github.com/",
+        links: [
+            {
+                link: "https://github.com/MingliZhang/portfolio-react",
+                image: github,
+            },
+            { link: "https://minglizhang.com/", image: website },
+        ],
     },
 ];
 
