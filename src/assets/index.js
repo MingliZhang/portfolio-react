@@ -45,6 +45,7 @@ import pattie from "./project/pattie.jpg";
 import seamCarving from "./project/seamCarving.jpg";
 import splinterDB from "./project/splinterDB.png";
 import thisPortfolio from "./project/thisPortfolio.png";
+import techZone from "./project/techZone.png";
 
 export {
     logo,
@@ -91,4 +92,5 @@ export {
     seamCarving,
     splinterDB,
     thisPortfolio,
+    techZone,
 };

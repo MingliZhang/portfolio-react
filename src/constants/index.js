@@ -20,6 +20,7 @@ import {
     mongodb,
     git,
     next,
+    techZone,
     cymantix,
     ibm,
     threejs,
@@ -266,7 +267,35 @@ const testimonials = [
     },
 ];
 
+const projectIntro =
+    "Following projects showcases my skills and experience through work/research projects and school projects. Each project is briefly described with links to code repositories as well as research result paper or live demos in it if avaliable. It reflects my ability to solve complex problems, work with different technologies, and lead development teams to deliver on time.";
 const projects = [
+    {
+        name: "IBM's Tech Zone",
+        description:
+            "A platform for IBM to share its environments between development teams internally and contracted parties. I worked on this project during my internship at IBM as a full stack developer.",
+        tags: [
+            {
+                name: "Next JS",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Carbon",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Sails JS",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: techZone,
+        links: [
+            {
+                link: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjEnL2Q6JSAAxWWZ_UHHSSbCnEQFnoECBIQAQ&url=https%3A%2F%2Ftechzone.ibm.com%2F&usg=AOvVaw3f1u0N_QY5xma7nAQeW-hV&opi=89978449",
+                image: website,
+            },
+        ],
+    },
     {
         name: "ChampionPDI",
         description:
@@ -334,6 +363,7 @@ const projects = [
         image: miaomiao,
         links: [
             { link: "https://github.com/MingliZhang/final_426", image: github },
+            { link: "https://comp426-firebase.web.app/", image: website },
         ],
     },
     {
@@ -368,7 +398,8 @@ const projects = [
     },
     {
         name: "One Pixel Attack Defense",
-        description: "",
+        description:
+            "An experiment on defending against one pixel attack or adverserial attacks using seam carving as the pre-processing step for CNN. The experiment was only half success as the attack success rate was limited due to computation power limits.",
         tags: [
             {
                 name: "PyTourch",
@@ -394,7 +425,8 @@ const projects = [
     },
     {
         name: "SplinterDB",
-        description: "",
+        description:
+            "A research project on SplinterDB, a modern KV store system developed by VMWare. I was in charge of decoupling the cache lookup table from storeage size and couple it with the actural cache size.",
         tags: [
             {
                 name: "C",
@@ -472,7 +504,8 @@ const projects = [
     },
     {
         name: "COUNTDOWN2030",
-        description: "",
+        description:
+            "Data visualization for UNICEF. This is the project from my college's information science lab CHIP.",
         tags: [
             {
                 name: "Tableau",
@@ -490,7 +523,8 @@ const projects = [
     },
     {
         name: "HDX",
-        description: "",
+        description:
+            "A mobile application for health data exchange. I am in charge of all of the mobile side and also worked with another college on the api and web development.",
         tags: [
             {
                 name: "React Native",
@@ -512,7 +546,8 @@ const projects = [
     },
     {
         name: "Easy Access",
-        description: "",
+        description:
+            "A platform for high school students that cannot get enough consultation for college application. The project was brought to me for a coures and passed on to future developers.",
         tags: [
             {
                 name: "Sails JS",
@@ -536,6 +571,10 @@ const projects = [
             {
                 link: "https://github.com/viradsky/EasyAccessCounselor",
                 image: github,
+            },
+            {
+                link: "https://counselors.easyaccess.education/",
+                image: website,
             },
         ],
     },
@@ -571,23 +610,16 @@ const projects = [
     },
     {
         name: "2048",
-        description: "",
+        description:
+            "Implemented the classic 2048 game with a game model for modern web development course using the MVC structure design. The entire project took a day to finish and debug.",
         tags: [
             {
-                name: "Sails JS",
+                name: "JQuery",
                 color: "blue-text-gradient",
             },
             {
-                name: "React JS",
+                name: "MVC",
                 color: "green-text-gradient",
-            },
-            {
-                name: "MongoDB",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "Firebase",
-                color: "red-text-gradient",
             },
         ],
         image: game,
@@ -604,7 +636,8 @@ const projects = [
     },
     {
         name: "First Portfolio",
-        description: "",
+        description:
+            "My first portfoilo using only HTML, CSS, and vanilla JavaScript. Helped my secure a summer internship at IBM.",
         tags: [
             {
                 name: "HTML",
@@ -627,7 +660,8 @@ const projects = [
     },
     {
         name: "Next Portfolio",
-        description: "",
+        description:
+            "My second portfolio, it was a side project to learn Next.js and tailwindcss by hands on projects. The content is not updated anymore tho.",
         tags: [
             {
                 name: "Next JS",
@@ -653,7 +687,8 @@ const projects = [
     },
     {
         name: "This Portfolio",
-        description: "",
+        description:
+            "The portfolio you are currently viewing. It is more efficient, more elegant interface, and easy to expand.",
         tags: [
             {
                 name: "React",
@@ -669,7 +704,7 @@ const projects = [
             },
             {
                 name: "Three JS",
-                color: "pink-text-gradient",
+                color: "orange-text-gradient",
             },
         ],
         image: thisPortfolio,
@@ -691,4 +726,5 @@ export {
     testimonials,
     projects,
     contacts,
+    projectIntro,
 };
