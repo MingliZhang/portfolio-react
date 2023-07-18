@@ -25,7 +25,7 @@ const ProjectCard = ({
             viewport={{ once: true }}
             transition={{
                 type: "spring",
-                delay: (index * 0.5) % 3,
+                delay: 0.5,
                 duration: 0.75,
                 ease: "easeOut",
             }}
