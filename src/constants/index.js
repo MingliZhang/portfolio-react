@@ -55,19 +55,19 @@ const intro = `I'm a skilled software developer with experience in full stack we
 
 export const navLinks = [
     {
-        id: "",
+        id: "/",
         title: "Overview",
     },
     {
-        id: "work",
+        id: "/work",
         title: "Work",
     },
     {
-        id: "projects",
+        id: "/projects",
         title: "Projects",
     },
     {
-        id: "contact",
+        id: "/contact",
         title: "Contact",
     },
 ];
@@ -265,8 +265,8 @@ const testimonials = [
 ];
 
 const projectIntro =
-  "Following projects showcases my skills and experience through work/research projects and school projects. Each project is briefly described with links to code repositories as well as research result paper or live demos in it if avaliable. It reflects my ability to solve complex problems, work with different technologies, and lead development teams to deliver on time.";
-    
+    "Following projects showcases my skills and experience through work/research projects and school projects. Each project is briefly described with links to code repositories as well as research result paper or live demos in it if avaliable. It reflects my ability to solve complex problems, work with different technologies, and lead development teams to deliver on time.";
+
 const projects = [
     {
         name: "IBM's Tech Zone",
@@ -501,9 +501,8 @@ const projects = [
             },
         ],
         image: hdxMobile,
-    
+
         githubLink: "https://github.com/MingliZhang/hdxMobile",
-    
     },
     {
         name: "Easy Access",
@@ -529,9 +528,8 @@ const projects = [
         ],
         image: easyAccess,
         githubLink: "https://github.com/viradsky/EasyAccessCounselor",
-    
-                site: "https://counselors.easyaccess.education/",
-    
+
+        site: "https://counselors.easyaccess.education/",
     },
     {
         name: "How to get away from Covid 19",
@@ -556,8 +554,8 @@ const projects = [
             },
         ],
         image: covid,
-        githubLink: "https://github.com/MingliZhang/How-to-Get-Away-from-Covid-19",
-    
+        githubLink:
+            "https://github.com/MingliZhang/How-to-Get-Away-from-Covid-19",
     },
     {
         name: "2048",
@@ -574,10 +572,9 @@ const projects = [
             },
         ],
         image: game,
-       githubLink: "https://github.com/MingliZhang/2048",
-    
-                site: "https://minglizhang-first.web.app/2048/index.html",
-    
+        githubLink: "https://github.com/MingliZhang/2048",
+
+        site: "https://minglizhang-first.web.app/2048/index.html",
     },
     {
         name: "First Portfolio",
@@ -599,8 +596,7 @@ const projects = [
         ],
         image: firstPortfolio,
         githubLink: "https://github.com/MingliZhang/portfolio",
-           site: "https://minglizhang-first.web.app/",
-    
+        site: "https://minglizhang-first.web.app/",
     },
     {
         name: "Next Portfolio",
@@ -621,7 +617,8 @@ const projects = [
             },
         ],
         image: nextPortfolio,
-        githubLink: "https://github.com/MingliZhang/portfolio-next", site: "https://minglizhang-next.web.app/",
+        githubLink: "https://github.com/MingliZhang/portfolio-next",
+        site: "https://minglizhang-next.web.app/",
     },
     {
         name: "This Portfolio",
@@ -647,7 +644,7 @@ const projects = [
         ],
         image: thisPortfolio,
         githubLink: "https://github.com/MingliZhang/portfolio-react",
-            site: "https://minglizhang.com/",
+        site: "https://minglizhang.com/",
     },
 ];
 
