@@ -46,6 +46,7 @@ import seamCarving from "./project/seamCarving.jpg";
 import splinterDB from "./project/splinterDB.png";
 import thisPortfolio from "./project/thisPortfolio.png";
 import techZone from "./project/techZone.png";
+import championpdiicon from "./company/championpdiicon.jpg";
 
 export {
     logo,
@@ -71,6 +72,7 @@ export {
     threejs,
     ibm,
     cymantix,
+    championpdiicon,
     lenovo,
     firebase,
     C,

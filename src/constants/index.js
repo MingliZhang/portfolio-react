@@ -24,6 +24,7 @@ import {
     cymantix,
     ibm,
     threejs,
+    championpdiicon,
     lenovo,
     firebase,
     C,
@@ -187,16 +188,32 @@ const blackBg = "#383E56";
 
 const experiences = [
     {
+        title: "Lead Software Developer - Freelance",
+        company_name: "ChampionPDI",
+        icon: championpdiicon,
+        iconBg: whiteBg,
+        date: "October 2021 - Jan 2023",
+        points: [
+            "Led a team of 6 developers to create a sales representative management platform that gained 200+ users from the first launch week.",
+            "Employed a serverless approach, leveraging HTML, CSS, VanillaJS, and WebPack for the frontend, and Firebase to manage hosting, authentication, and NoSQL database.",
+            "Transitioned the project to React post-launch to enhance user experience and performance.",
+            "Introduced release management processes and automated deployment through Github, resulting in improved collaboration and efficient delivery.",
+            "Conducted weekly scrum meetings, code reviews, and tech talks to ensure task transparency, on-time deliveries, and knowledge sharing for accelerated development.",
+        ],
+    },
+    {
         title: "Software Developer",
         company_name: "Cymantix",
         icon: cymantix,
         iconBg: whiteBg,
         date: "October 2021 - Jan 2023",
         points: [
-            "Engineered, with a team of 5 developers,  a full-stack SaaS machine learning driven platform that integrated a WebRTC video conferencing app, an information retrieval app, and a core identity API. The platform played a key role in the company securing seed-round funding.",
-            "Incorporated Microsoft Azure into our platform as per our client's request, providing more flexible login choices and enabling seamless secured data transfer between our data retrieval app and Microsoft's cloud storage.",
-            "Utilized Socket.io to parallelize the real-time news analysis process in our data retrieval platform, leading to a 70% acceleration.",
-            "Strengthened our critical data update pipeline with the implementation of bash scripts, Python, and a Cron job, resulting in increased reliability.",
+            "Collaborated with a team of 5 developers to create a full-stack SaaS machine-learning-driven platform that integrated a WebRTC video conferencing app, an information retrieval app, and a core identity API. The platform played a vital role in securing seed-round funding.",
+            "Investigated using Scikit-learn of Hierarchical clustering as a replacement the K-Means, reducing computation overhead by 10%-60%.",
+            "Incorporated Microsoft Azure into our platform, enhancing login options and facilitating seamless secured data transfer between our data retrieval app and Microsoft's cloud storage.",
+            "Refactored codebase from HTML, CSS, and in-line JavaScript to Next.js, resulting in improved readability and a 20% reduction in code redundancy.",
+            "Optimized real-time news analysis process on the data retrieval platform using multithreading and Socket.io, achieving a 90% acceleration.",
+            "Strengthened the critical data update pipeline with Bash script, Python, and CronJob, ensuring reliable and up-to-date PubMed data.",
         ],
     },
     {
@@ -206,9 +223,9 @@ const experiences = [
         iconBg: whiteBg,
         date: "May 2021 - Aug 2021",
         points: [
-            "Improved user experience on a development environment management platform that supports 2000+ IBM developers each month.",
-            "Optimized administrative content tasks to reduce workload for developers, resulting in more than 10 times faster content updates and fewer required deployments.",
-            "Founded an automated validation service using Sails.js that reduced month of manual time to maintain the employee database",
+            "Enhanced user experience using NextJS for 12,000+ IBMers each month by implementing intuitive improvements based on user feedback.",
+            "Streamlined administrative content activities, resulting in faster content updates and a reduction of 20+ redeployments per week for developers.",
+            "Co-founded an automated validation service with a fellow intern using SailsJS to simplify employee database maintenance, saving three months' worth of manual operations annually.",
         ],
     },
     {
@@ -218,10 +235,7 @@ const experiences = [
         iconBg: "#E6DEDD",
         date: "April 2021 - May 2023",
         points: [
-            "Established data visualization using Tableau for UNICEF to monitor health conduction of children and women across 200 countries.",
-            "Initiated a mobile application for a health data exchange platform using React Native and Flask Backend.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Worked on different projects as a full stack developer as well as a mobile developer.",
         ],
     },
     {
@@ -231,8 +245,8 @@ const experiences = [
         iconBg: whiteBg,
         date: "June 2017 - Auguest 2017",
         points: [
-            "Designed Lenovo's B2B web store with Mocking-Bot (similar to Adobe XD), providing retailers with access to product information for over 1000 products, as well as remote technology support and restocking capabilities.",
-            "Negotiated with the marketing and human resources departments to determine the necessary resources for the completion of the project.",
+            "Designed Lenovo's B2B web store using the program MockingBot with a team of three other individuals.",
+            "Attended meetings with the marketing and human resources to discuss the resources necessary for the project's success.",
         ],
     },
 ];
@@ -293,7 +307,7 @@ const projects = [
     {
         name: "ChampionPDI",
         description:
-            "Web-based platform designed for cutco that allows its sells agents to manage demos and prospects, and managers to view, monitor and better support their agents. I am the tech lead of this project and lead a 6 person devleopment team.",
+            "Web-based platform designed for cutco that allows its sells agents to manage demos and prospects, and managers to view, monitor and better support their agents. I am the tech lead of this project and lead a 6 developer team.",
         tags: [
             {
                 name: "react",
