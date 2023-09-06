@@ -28,6 +28,7 @@ import unc from "./company/unc.png";
 import lenovo from "./company/lenovo.png";
 import ibm from "./company/ibm.png";
 import cymantix from "./company/cymantix.png";
+import championpdiicon from "./company/championpdi.png";
 
 import attack from "./project/attack.png";
 import CD2030 from "./project/CD2030.jpg";
@@ -46,7 +47,6 @@ import seamCarving from "./project/seamCarving.jpg";
 import splinterDB from "./project/splinterDB.png";
 import thisPortfolio from "./project/thisPortfolio.png";
 import techZone from "./project/techZone.png";
-import championpdiicon from "./company/championpdiicon.jpg";
 
 export {
     logo,
