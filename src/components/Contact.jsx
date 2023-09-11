@@ -97,13 +97,12 @@ const Contact = () => {
 
     return (
         <>
-            {/* <div className={``}> */}
             <motion.div
                 variants={slideIn("right", "tween", 0.2, 1)}
                 className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 bg-black-100 p-8 rounded-2xl xl:mt-12 gap-5  overflow-hidden text-center"
             >
                 {contacts.map((contact, index) => (
-                    <div>
+                    <div key={index}>
                         <a
                             target="blank"
                             href={contact.link}
@@ -116,7 +115,7 @@ const Contact = () => {
                 ))}
             </motion.div>
             <div
-                className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+                className={`xl:mt-12 flex xl:flex-row flex-col gap-10 overflow-hidden`}
             >
                 <motion.div
                     variants={slideIn("left", "tween", 0.2, 1)}
@@ -178,7 +177,6 @@ const Contact = () => {
                         </button>
                     </form>
                 </motion.div>
-
                 <motion.div
                     variants={slideIn("right", "tween", 0.2, 1)}
                     className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"

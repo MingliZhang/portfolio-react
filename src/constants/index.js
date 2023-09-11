@@ -49,10 +49,7 @@ import {
 } from "../assets";
 import { attackReport, newsReport } from "../../documents";
 
-const intro = `I'm a skilled software developer with experience in full stack web development, mobile application developement, and systems research. I'm a quick learner and collaborate closely with
-                teammates and clients to create efficient, scalable, and user-friendly
-                solutions that solve real-world problems. Let's work together to
-                bring your ideas to life!`;
+const intro = `I'm a skilled software engineer with experience in full stack web development, mobile application developement, and machine learning. I'm a quick learner and collaborate closely with teammates and clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!`;
 
 export const navLinks = [
     {
@@ -108,21 +105,24 @@ const contacts = [
 
 const services = [
     {
-        title: "Full Stack Developer",
+        title: "Work",
         icon: web,
+        link: "/work",
     },
     {
-        title: "React Native Developer",
+        title: "Projects",
         icon: mobile,
+        link: "/projects",
     },
     {
-        title: "Researcher",
+        title: "Contact",
         icon: backend,
+        link: "/contact",
     },
-    {
-        title: "Software Developer",
-        icon: creator,
-    },
+    // {
+    //     title: "Software Developer",
+    //     icon: creator,
+    // },
 ];
 
 const technologies = [
@@ -194,11 +194,11 @@ const experiences = [
         iconBg: whiteBg,
         date: "October 2021 - Jan 2023",
         points: [
-            "Led a team of 6 developers to create a sales representative management platform that gained 200+ users from the first launch week.",
-            "Employed a serverless approach, leveraging HTML, CSS, VanillaJS, and WebPack for the frontend, and Firebase to manage hosting, authentication, and NoSQL database.",
-            "Transitioned the project to React post-launch to enhance user experience and performance.",
-            "Introduced release management processes and automated deployment through Github, resulting in improved collaboration and efficient delivery.",
-            "Conducted weekly scrum meetings, code reviews, and tech talks to ensure task transparency, on-time deliveries, and knowledge sharing for accelerated development.",
+            "Led a team of 6 developers to successfully launch a sales representative management platform, gaining 200+ users in the first week.",
+            "Developed a web application using HTML, CSS, VanillaJS, WebPack for frontend and Firebase backend, delivering a usable product within just 2 months.",
+            "Transitioned the project to React post-launch, resulting in a 60% reduction in database queries and 50% faster loading speed.",
+            "Introduced release management processes and automated deployment through Github, saving 4 hours weekly in resolving code conflicts and rolling out bug fixes.",
+            "Initiated weekly scrum meetings, code reviews, and tech talks, reducing learning costs and enabling all developers to contribute quality code after just 1 month.",
         ],
     },
     {
@@ -208,12 +208,12 @@ const experiences = [
         iconBg: whiteBg,
         date: "October 2021 - Jan 2023",
         points: [
-            "Collaborated with a team of 5 developers to create a full-stack SaaS machine-learning-driven platform that integrated a WebRTC video conferencing app, an information retrieval app, and a core identity API. The platform played a vital role in securing seed-round funding.",
-            "Investigated using Scikit-learn of Hierarchical clustering as a replacement the K-Means, reducing computation overhead by 10%-60%.",
-            "Incorporated Microsoft Azure into our platform, enhancing login options and facilitating seamless secured data transfer between our data retrieval app and Microsoft's cloud storage.",
-            "Refactored codebase from HTML, CSS, and in-line JavaScript to Next.js, resulting in improved readability and a 20% reduction in code redundancy.",
-            "Optimized real-time news analysis process on the data retrieval platform using multithreading and Socket.io, achieving a 90% acceleration.",
-            "Strengthened the critical data update pipeline with Bash script, Python, and CronJob, ensuring reliable and up-to-date PubMed data.",
+            "Created a full-stack machine-learning-driven data analytics platform in a global team of 5 engineers, securing seed-round funding.",
+            "Investigated replacing K-Means with Hierarchical clustering, reducing computation overhead and user wait time by 10%-60%.",
+            "Integrated Microsoft Azure into our platform, providing login options and secure data storage from Microsoft's cloud. Resulted in a cost-effective transition for users and gained 2 non-profit organizations as clients within 1 week.",
+            "Resolved communication issues between engineering and business teams, improving pitch presentations and acquiring 3 additional clients.",
+            "Refactored codebase to Next.js, enhancing code readability and 20% reduction in redundancy.",
+            "Optimized real-time news analysis using multithreading and Socket.io, decreasing user wait time by 90%.",
         ],
     },
     {
@@ -223,9 +223,9 @@ const experiences = [
         iconBg: whiteBg,
         date: "May 2021 - Aug 2021",
         points: [
-            "Enhanced user experience using NextJS for 12,000+ IBMers each month by implementing intuitive improvements based on user feedback.",
-            "Streamlined administrative content activities, resulting in faster content updates and a reduction of 20+ redeployments per week for developers.",
-            "Co-founded an automated validation service with a fellow intern using SailsJS to simplify employee database maintenance, saving three months' worth of manual operations annually.",
+            "Enhanced user experience based on user feedback using NextJS, resulting in a monthly user base expansion to over 12,000+ IBMers.",
+            "Streamlined administrative content activities, resulting in faster content updates and a reducing 20+ redeployments weekly for developers.",
+            "Co-founded an automated validation service with a fellow intern utilizing SailsJS to simplify database maintenance, saving 3 months' of manual operations annually.",
         ],
     },
     {
