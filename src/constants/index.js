@@ -3,8 +3,8 @@ import {
     faInstagram,
     faFacebook,
     faGithub,
-} from "@fortawesome/free-brands-svg-icons";
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-brands-svg-icons';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {
     mobile,
     backend,
@@ -46,78 +46,78 @@ import {
     seamCarving,
     splinterDB,
     thisPortfolio,
-} from "../assets";
-import { attackReport, newsReport } from "../../documents";
+} from '../assets';
+import { attackReport, newsReport } from '../../documents';
 
 const intro = `I'm a skilled software engineer with experience in full stack web development, mobile application developement, and machine learning. I'm a quick learner and collaborate closely with teammates and clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!`;
 
 export const navLinks = [
     {
-        id: "/",
-        title: "Overview",
+        id: '/',
+        title: 'Overview',
     },
     {
-        id: "/work",
-        title: "Work",
+        id: '/work',
+        title: 'Work',
     },
     {
-        id: "/projects",
-        title: "Projects",
+        id: '/projects',
+        title: 'Projects',
     },
     {
-        id: "/contact",
-        title: "Contact",
+        id: '/contact',
+        title: 'Contact',
     },
 ];
 
 const contacts = [
     {
-        link: "https://github.com/MingliZhang/",
+        link: 'https://github.com/MingliZhang/',
         icon: faGithub,
-        text: "@MingliZhang",
+        text: '@MingliZhang',
     },
     {
-        link: "https://www.facebook.com/mike.zhang.792303/",
+        link: 'https://www.facebook.com/mike.zhang.792303/',
         icon: faFacebook,
-        text: "@Mike Zhang",
+        text: '@Mike Zhang',
     },
     {
-        link: "https://www.instagram.com/mingli_zhang/",
+        link: 'https://www.instagram.com/mingli_zhang/',
         icon: faInstagram,
-        text: "@Mingli Zhang",
+        text: '@Mingli Zhang',
     },
     {
-        link: "https://www.linkedin.com/in/mingli-zhang/",
+        link: 'https://www.linkedin.com/in/mingli-zhang/',
         icon: faLinkedin,
-        text: "@Mingli Zhang",
+        text: '@Mingli Zhang',
     },
     {
-        link: "mailto:minglizhang2000@outlook.com",
+        link: 'mailto:minglizhang2000@outlook.com',
         icon: faEnvelope,
-        text: "minglizhang2000@outlook.com",
+        text: 'minglizhang2000@outlook.com',
     },
     {
-        link: "tel:9192745562",
+        link: 'tel:9192745562',
         icon: faPhone,
-        text: "(919)274-5562",
+        text: '(919)274-5562',
     },
 ];
 
 const services = [
     {
-        title: "Work",
+        title: 'Work',
         icon: web,
-        link: "/work",
+        link: '/work',
     },
     {
-        title: "Projects",
+        title: 'Projects',
         icon: mobile,
-        link: "/projects",
+        link: '/projects',
     },
     {
-        title: "Contact",
+        title: 'Contact',
         icon: backend,
-        link: "/contact",
+        link: '/contact',
     },
     // {
     //     title: "Software Developer",
@@ -127,123 +127,123 @@ const services = [
 
 const technologies = [
     {
-        name: "HTML 5",
+        name: 'HTML 5',
         icon: html,
     },
     {
-        name: "CSS 3",
+        name: 'CSS 3',
         icon: css,
     },
     {
-        name: "JavaScript",
+        name: 'JavaScript',
         icon: javascript,
     },
     {
-        name: "TypeScript",
+        name: 'TypeScript',
         icon: typescript,
     },
     {
-        name: "React JS",
+        name: 'React JS',
         icon: reactjs,
     },
     {
-        name: "Tailwind CSS",
+        name: 'Tailwind CSS',
         icon: tailwind,
     },
     {
-        name: "Node JS",
+        name: 'Node JS',
         icon: nodejs,
     },
     {
-        name: "MongoDB",
+        name: 'MongoDB',
         icon: mongodb,
     },
     {
-        name: "Three JS",
+        name: 'Three JS',
         icon: threejs,
     },
     {
-        name: "git",
+        name: 'git',
         icon: git,
     },
     {
-        name: "Next JS",
+        name: 'Next JS',
         icon: next,
     },
     {
-        name: "Firebase",
+        name: 'Firebase',
         icon: firebase,
     },
     {
-        name: "C",
+        name: 'C',
         icon: C,
     },
     {
-        name: "C++",
+        name: 'C++',
         icon: Cpp,
     },
 ];
-const whiteBg = "#E6DEDD";
-const blackBg = "#383E56";
+const whiteBg = '#E6DEDD';
+const blackBg = '#383E56';
 
 const experiences = [
     {
-        title: "Lead Software Developer - Freelance",
-        company_name: "ChampionPDI",
+        title: 'Lead Software Developer - Freelance',
+        company_name: 'ChampionPDI',
         icon: championpdiicon,
         iconBg: whiteBg,
-        date: "October 2021 - Jan 2023",
+        date: 'October 2021 - Jan 2023',
         points: [
-            "Led a team of 6 developers to successfully launch a sales representative management platform, gaining 200+ users in the first week.",
-            "Developed a web application using HTML, CSS, VanillaJS, WebPack for frontend and Firebase backend, delivering a usable product within just 2 months.",
-            "Transitioned the project to React post-launch, resulting in a 60% reduction in database queries and 50% faster loading speed.",
-            "Introduced release management processes and automated deployment through Github, saving 4 hours weekly in resolving code conflicts and rolling out bug fixes.",
-            "Initiated weekly scrum meetings, code reviews, and tech talks, reducing learning costs and enabling all developers to contribute quality code after just 1 month.",
+            'Led a team of 6 developers to successfully launch a sales representative management platform, gaining 200+ users in the first week.',
+            'Developed a web application using HTML, CSS, VanillaJS, WebPack for frontend and Firebase backend, delivering a usable product within just 2 months.',
+            'Transitioned the project to React post-launch, resulting in a 60% reduction in database queries and 50% faster loading speed.',
+            'Introduced release management processes and automated deployment through Github, saving 4 hours weekly in resolving code conflicts and rolling out bug fixes.',
+            'Initiated weekly scrum meetings, code reviews, and tech talks, reducing learning costs and enabling all developers to contribute quality code after just 1 month.',
         ],
     },
     {
-        title: "Software Developer",
-        company_name: "Cymantix",
+        title: 'Software Developer',
+        company_name: 'Cymantix',
         icon: cymantix,
         iconBg: whiteBg,
-        date: "October 2021 - Jan 2023",
+        date: 'October 2021 - Jan 2023',
         points: [
-            "Created a full-stack machine-learning-driven data analytics platform in a global team of 5 engineers, securing seed-round funding.",
-            "Investigated replacing K-Means with Hierarchical clustering, reducing computation overhead and user wait time by 10%-60%.",
+            'Created a full-stack machine-learning-driven data analytics platform in a global team of 5 engineers, securing seed-round funding.',
+            'Investigated replacing K-Means with Hierarchical clustering, reducing computation overhead and user wait time by 10%-60%.',
             "Integrated Microsoft Azure into our platform, providing login options and secure data storage from Microsoft's cloud. Resulted in a cost-effective transition for users and gained 2 non-profit organizations as clients within 1 week.",
-            "Resolved communication issues between engineering and business teams, improving pitch presentations and acquiring 3 additional clients.",
-            "Refactored codebase to Next.js, enhancing code readability and 20% reduction in redundancy.",
-            "Optimized real-time news analysis using multithreading and Socket.io, decreasing user wait time by 90%.",
+            'Resolved communication issues between engineering and business teams, improving pitch presentations and acquiring 3 additional clients.',
+            'Refactored codebase to Next.js, enhancing code readability and 20% reduction in redundancy.',
+            'Optimized real-time news analysis using multithreading and Socket.io, decreasing user wait time by 90%.',
         ],
     },
     {
-        title: "Full Stack Enginner Summer Intern",
-        company_name: "IBM",
+        title: 'Full Stack Enginner Summer Intern',
+        company_name: 'IBM',
         icon: ibm,
         iconBg: whiteBg,
-        date: "May 2021 - Aug 2021",
+        date: 'May 2021 - Aug 2021',
         points: [
-            "Enhanced user experience based on user feedback using NextJS, resulting in a monthly user base expansion to over 12,000+ IBMers.",
-            "Streamlined administrative content activities, resulting in faster content updates and a reducing 20+ redeployments weekly for developers.",
+            'Enhanced user experience based on user feedback using NextJS, resulting in a monthly user base expansion to over 12,000+ IBMers.',
+            'Streamlined administrative content activities, resulting in faster content updates and a reducing 20+ redeployments weekly for developers.',
             "Co-founded an automated validation service with a fellow intern utilizing SailsJS to simplify database maintenance, saving 3 months' of manual operations annually.",
         ],
     },
     {
-        title: "Research Assistant",
-        company_name: "UNC - CH, LAIR ",
+        title: 'Research Assistant',
+        company_name: 'UNC - CH, LAIR ',
         icon: unc,
-        iconBg: "#E6DEDD",
-        date: "April 2021 - May 2023",
+        iconBg: '#E6DEDD',
+        date: 'April 2021 - May 2023',
         points: [
-            "Worked on different projects as a full stack developer as well as a mobile developer.",
+            'Worked on different projects as a full stack developer as well as a mobile developer.',
         ],
     },
     {
-        title: "UI/UX Designer Summer Intern",
-        company_name: "Lenovo",
+        title: 'UI/UX Designer Summer Intern',
+        company_name: 'Lenovo',
         icon: lenovo,
         iconBg: whiteBg,
-        date: "June 2017 - Auguest 2017",
+        date: 'June 2017 - Auguest 2017',
         points: [
             "Designed Lenovo's B2B web store using the program MockingBot with a team of three other individuals.",
             "Attended meetings with the marketing and human resources to discuss the resources necessary for the project's success.",
@@ -255,410 +255,410 @@ const testimonials = [
     {
         testimonial:
             "I have the pleasure to work with Mingli throughout the time at UNC LAIR and Cymantix. With a solid foundation in CS and Math, Mingli has demonstrated outstanding capabilities in logical thinking. He's the software engineer that embodies genuine passion about knowledge, extraordinary learning speed and initiatives, and diligent working attitude. I could not recommend him enough!",
-        name: "Xinzhao Li",
-        designation: "Tech Lead",
-        company: "Cymantix",
-        image: "https://media.licdn.cn/dms/image/C4E03AQFQuIeI4eHquA/profile-displayphoto-shrink_400_400/0/1573494512736?e=1694649600&v=beta&t=qBVA77lIHcl5aYs6eqlYXlCNe5yhrpkvnAcpdLrAYZ8",
+        name: 'Xinzhao Li',
+        designation: 'Tech Lead',
+        company: 'Cymantix',
+        image: 'https://media.licdn.cn/dms/image/C4E03AQFQuIeI4eHquA/profile-displayphoto-shrink_400_400/0/1573494512736?e=1694649600&v=beta&t=qBVA77lIHcl5aYs6eqlYXlCNe5yhrpkvnAcpdLrAYZ8',
     },
     {
         testimonial:
-            "Mingli worked on my project, Easy Access, as part of a advanced-level undergraduate course at UNC that matches teams of 3-4 upper-level computer science majors with software clients. Mingli single-handedly proposed and created a redesign of our back-end system using a sails.js framework connected to MongoDB. He showed great initiative in suggesting and designing changes to our system. Overall, Mingli is a highly skilled, diligent, and innovative programmer, good communicator, and a hard worker. I would highly recommend him for any project, job, or graduate program. It was a pleasure working with Mingli. Thank you so much for your help!",
-        name: "Vitaly Radsky",
-        designation: "COO",
-        company: "Easy Access",
-        image: "https://media.licdn.cn/dms/image/C4E03AQGnvEODnb-32A/profile-displayphoto-shrink_400_400/0/1546453608433?e=1694649600&v=beta&t=3WbKD7k7SfIyl1UCgTeCPOUbLses099X9GYTMDN--oY",
+            'Mingli worked on my project, Easy Access, as part of a advanced-level undergraduate course at UNC that matches teams of 3-4 upper-level computer science majors with software clients. Mingli single-handedly proposed and created a redesign of our back-end system using a sails.js framework connected to MongoDB. He showed great initiative in suggesting and designing changes to our system. Overall, Mingli is a highly skilled, diligent, and innovative programmer, good communicator, and a hard worker. I would highly recommend him for any project, job, or graduate program. It was a pleasure working with Mingli. Thank you so much for your help!',
+        name: 'Vitaly Radsky',
+        designation: 'COO',
+        company: 'Easy Access',
+        image: 'https://media.licdn.cn/dms/image/C4E03AQGnvEODnb-32A/profile-displayphoto-shrink_400_400/0/1546453608433?e=1694649600&v=beta&t=3WbKD7k7SfIyl1UCgTeCPOUbLses099X9GYTMDN--oY',
     },
     {
         testimonial:
             "Mingli has an impressive ability to learn quickly, which  experienced first-hand during his 11-week internship at IBM this past summer. Mingli joined the development team that project I managed and within just a few weeks he picked up our front-end and back-end frameworks. After only a month, Mingli was assigned bigger projects to automate and streamline manual tasks. He managed this while still delivering front-end enhancements to improve our user's experience while navigating our site, IBM Technology Zone. I realized quickly Mingli was dedicated, hard-working, and could think out of the box. He was always open to trying something new, providing feedback, and contributing his innovative solutions to support our team's initiatives. Mingli also is so much fun to work with. Mingli's personality shined this summer as he was able to make connections with a whole remote working team and fit right in. I would have no hesitation in recommending Mingli to any potential company seeking new talent.",
-        name: "Brooke Jones",
-        designation: "Product Manager",
-        company: "IBM",
-        image: "https://media.licdn.cn/dms/image/C4E03AQGOBHLaZGeegA/profile-displayphoto-shrink_400_400/0/1638124922331?e=1694649600&v=beta&t=lJogkDQgzxagezCl75gltQ-pzdzo2S-mAcsoKyk79Hg",
+        name: 'Brooke Jones',
+        designation: 'Product Manager',
+        company: 'IBM',
+        image: 'https://media.licdn.cn/dms/image/C4E03AQGOBHLaZGeegA/profile-displayphoto-shrink_400_400/0/1638124922331?e=1694649600&v=beta&t=lJogkDQgzxagezCl75gltQ-pzdzo2S-mAcsoKyk79Hg',
     },
 ];
 
 const projectIntro =
-    "Following projects showcases my skills and experience through work/research projects and school projects. Each project is briefly described with links to code repositories as well as research result paper or live demos in it if avaliable. It reflects my ability to solve complex problems, work with different technologies, and lead development teams to deliver on time.";
+    'Following projects showcases my skills and experience through work/research projects and school projects. Each project is briefly described with links to code repositories as well as research result paper or live demos in it if avaliable. It reflects my ability to solve complex problems, work with different technologies, and lead development teams to deliver on time.';
 
 const projects = [
     {
         name: "IBM's Tech Zone",
         description:
-            "A platform for IBM to share its environments between development teams internally and contracted parties. I worked on this project during my internship at IBM as a full stack developer.",
+            'A platform for IBM to share its environments between development teams internally and contracted parties. I worked on this project during my internship at IBM as a full stack developer.',
         tags: [
             {
-                name: "Next JS",
-                color: "blue-text-gradient",
+                name: 'Next JS',
+                color: 'blue-text-gradient',
             },
             {
-                name: "Carbon",
-                color: "green-text-gradient",
+                name: 'Carbon',
+                color: 'green-text-gradient',
             },
             {
-                name: "Sails JS",
-                color: "pink-text-gradient",
+                name: 'Sails JS',
+                color: 'pink-text-gradient',
             },
         ],
         image: techZone,
         githubLink:
-            "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjEnL2Q6JSAAxWWZ_UHHSSbCnEQFnoECBIQAQ&url=https%3A%2F%2Ftechzone.ibm.com%2F&usg=AOvVaw3f1u0N_QY5xma7nAQeW-hV&opi=89978449",
+            'https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjEnL2Q6JSAAxWWZ_UHHSSbCnEQFnoECBIQAQ&url=https%3A%2F%2Ftechzone.ibm.com%2F&usg=AOvVaw3f1u0N_QY5xma7nAQeW-hV&opi=89978449',
     },
     {
-        name: "ChampionPDI",
+        name: 'ChampionPDI',
         description:
-            "Web-based platform designed for cutco that allows its sells agents to manage demos and prospects, and managers to view, monitor and better support their agents. I am the tech lead of this project and lead a 6 developer team.",
+            'Web-based platform designed for cutco that allows its sells agents to manage demos and prospects, and managers to view, monitor and better support their agents. I am the tech lead of this project and lead a 6 developer team.',
         tags: [
             {
-                name: "react",
-                color: "blue-text-gradient",
+                name: 'react',
+                color: 'blue-text-gradient',
             },
             {
-                name: "firebase",
-                color: "green-text-gradient",
+                name: 'firebase',
+                color: 'green-text-gradient',
             },
             {
-                name: "Git",
-                color: "pink-text-gradient",
+                name: 'Git',
+                color: 'pink-text-gradient',
             },
         ],
         image: championpdi,
-        site: "https://championpdi.web.app/",
+        site: 'https://championpdi.web.app/',
     },
     {
-        name: "Pattie",
+        name: 'Pattie',
         description:
-            "A machine learning based search engine for medical documents. It clusters results so that users can find the document they need more acurratly and efficently. I was a software developer on the project and helped secure seed role funding.",
+            'A machine learning based search engine for medical documents. It clusters results so that users can find the document they need more acurratly and efficently. I was a software developer on the project and helped secure seed role funding.',
         tags: [
             {
-                name: "Sklearn",
-                color: "blue-text-gradient",
+                name: 'Sklearn',
+                color: 'blue-text-gradient',
             },
             {
-                name: "Flask",
-                color: "green-text-gradient",
+                name: 'Flask',
+                color: 'green-text-gradient',
             },
             {
-                name: "React",
-                color: "pink-text-gradient",
+                name: 'React',
+                color: 'pink-text-gradient',
             },
             {
-                name: "PyScript",
-                color: "orange-text-gradient",
+                name: 'PyScript',
+                color: 'orange-text-gradient',
             },
         ],
         image: pattie,
     },
     {
-        name: "Miao Miao Social App",
+        name: 'Miao Miao Social App',
         description:
-            "A social platform that supports chat through sockets and some games to compete with each other. I lead a team of 4 peers to finish this end of course project and demonstrated our web dev abilities.",
+            'A social platform that supports chat through sockets and some games to compete with each other. I lead a team of 4 peers to finish this end of course project and demonstrated our web dev abilities.',
         tags: [
             {
-                name: "firebase",
-                color: "blue-text-gradient",
+                name: 'firebase',
+                color: 'blue-text-gradient',
             },
             {
-                name: "restapi",
-                color: "green-text-gradient",
+                name: 'restapi',
+                color: 'green-text-gradient',
             },
             {
-                name: "HTML,CSS,&JS",
-                color: "pink-text-gradient",
+                name: 'HTML,CSS,&JS',
+                color: 'pink-text-gradient',
             },
         ],
         image: miaomiao,
-        githubLink: "https://github.com/MingliZhang/final_426",
-        site: "https://comp426-firebase.web.app/",
+        githubLink: 'https://github.com/MingliZhang/final_426',
+        site: 'https://comp426-firebase.web.app/',
     },
     {
-        name: "Fake News Detection",
+        name: 'Fake News Detection',
         description:
-            "Collaborated with three classmates, used logistic regression, Naive Bayes, support vector machine, and LSTM to train the computer to distinguish between real and fake news. We also compared the accuracy of each model. The data is from Kaggle.",
+            'Collaborated with three classmates, used logistic regression, Naive Bayes, support vector machine, and LSTM to train the computer to distinguish between real and fake news. We also compared the accuracy of each model. The data is from Kaggle.',
         tags: [
             {
-                name: "sklearn",
-                color: "blue-text-gradient",
+                name: 'sklearn',
+                color: 'blue-text-gradient',
             },
             {
-                name: "python",
-                color: "green-text-gradient",
+                name: 'python',
+                color: 'green-text-gradient',
             },
             {
-                name: "Jupyter Notebook",
-                color: "pink-text-gradient",
+                name: 'Jupyter Notebook',
+                color: 'pink-text-gradient',
             },
         ],
         image: news,
-        githubLink: "https://github.com/MingliZhang/COMP-562-Final-Project",
+        githubLink: 'https://github.com/MingliZhang/COMP-562-Final-Project',
         doc: newsReport,
     },
     {
-        name: "One Pixel Attack Defense",
+        name: 'One Pixel Attack Defense',
         description:
-            "An experiment on defending against one pixel attack or adverserial attacks using seam carving as the pre-processing step for CNN. The experiment was only half success as the attack success rate was limited due to computation power limits.",
+            'An experiment on defending against one pixel attack or adverserial attacks using seam carving as the pre-processing step for CNN. The experiment was only half success as the attack success rate was limited due to computation power limits.',
         tags: [
             {
-                name: "PyTourch",
-                color: "blue-text-gradient",
+                name: 'PyTourch',
+                color: 'blue-text-gradient',
             },
             {
-                name: "Python",
-                color: "green-text-gradient",
+                name: 'Python',
+                color: 'green-text-gradient',
             },
             {
-                name: "Image Processing",
-                color: "pink-text-gradient",
+                name: 'Image Processing',
+                color: 'pink-text-gradient',
             },
         ],
         image: attack,
-        githubLink: "https://github.com/MingliZhang/comp-755-final",
+        githubLink: 'https://github.com/MingliZhang/comp-755-final',
         doc: attackReport,
     },
     {
-        name: "SplinterDB",
+        name: 'SplinterDB',
         description:
-            "A research project on SplinterDB, a modern KV store system developed by VMWare. I was in charge of decoupling the cache lookup table from storeage size and couple it with the actural cache size.",
+            'A research project on SplinterDB, a modern KV store system developed by VMWare. I was in charge of decoupling the cache lookup table from storeage size and couple it with the actural cache size.',
         tags: [
             {
-                name: "C",
-                color: "blue-text-gradient",
+                name: 'C',
+                color: 'blue-text-gradient',
             },
             {
-                name: "KV store",
-                color: "green-text-gradient",
+                name: 'KV store',
+                color: 'green-text-gradient',
             },
             {
-                name: "Research",
-                color: "pink-text-gradient",
+                name: 'Research',
+                color: 'pink-text-gradient',
             },
         ],
         image: splinterDB,
-        githubLink: "https://github.com/vmware/splinterdb",
+        githubLink: 'https://github.com/vmware/splinterdb',
     },
     {
-        name: "2D Graphics",
+        name: '2D Graphics',
         description:
-            "Implemented a C++ graphics library that can draw polygons, shaders, and much more.",
+            'Implemented a C++ graphics library that can draw polygons, shaders, and much more.',
         tags: [
             {
-                name: "Sails JS",
-                color: "blue-text-gradient",
+                name: 'Sails JS',
+                color: 'blue-text-gradient',
             },
             {
-                name: "React JS",
-                color: "green-text-gradient",
+                name: 'React JS',
+                color: 'green-text-gradient',
             },
             {
-                name: "MongoDB",
-                color: "pink-text-gradient",
+                name: 'MongoDB',
+                color: 'pink-text-gradient',
             },
             {
-                name: "Firebase",
-                color: "orange-text-gradient",
+                name: 'Firebase',
+                color: 'orange-text-gradient',
             },
         ],
         image: graphics,
-        githubLink: "https://github.com/MingliZhang/COMP-475",
+        githubLink: 'https://github.com/MingliZhang/COMP-475',
     },
     {
-        name: "Seam Carving",
+        name: 'Seam Carving',
         description:
             "A 'smart' way to perform image resizing without loosing much important information by utalizing a per pixel weight map and dynamic programming.",
         tags: [
             {
-                name: "Matlab",
-                color: "blue-text-gradient",
+                name: 'Matlab',
+                color: 'blue-text-gradient',
             },
             {
-                name: "Dynamic Programming",
-                color: "green-text-gradient",
+                name: 'Dynamic Programming',
+                color: 'green-text-gradient',
             },
         ],
         image: seamCarving,
-        githubLink: "https://github.com/MingliZhang/COMP-572",
-        site: "https://www.youtube.com/watch?v=K0JNBQBAtys",
+        githubLink: 'https://github.com/MingliZhang/COMP-572',
+        site: 'https://www.youtube.com/watch?v=K0JNBQBAtys',
     },
     {
-        name: "COUNTDOWN2030",
+        name: 'COUNTDOWN2030',
         description:
             "Data visualization for UNICEF. This is the project from my college's information science lab CHIP.",
         tags: [
             {
-                name: "Tableau",
-                color: "blue-text-gradient",
+                name: 'Tableau',
+                color: 'blue-text-gradient',
             },
             {
-                name: "Wordpress",
-                color: "green-text-gradient",
+                name: 'Wordpress',
+                color: 'green-text-gradient',
             },
         ],
         image: CD2030,
-        site: "https://data.unicef.org/countdown-2030/",
+        site: 'https://data.unicef.org/countdown-2030/',
     },
     {
-        name: "HDX",
+        name: 'HDX',
         description:
-            "A mobile application for health data exchange. I am in charge of all of the mobile side and also worked with another college on the api and web development.",
+            'A mobile application for health data exchange. I am in charge of all of the mobile side and also worked with another college on the api and web development.',
         tags: [
             {
-                name: "React Native",
-                color: "blue-text-gradient",
+                name: 'React Native',
+                color: 'blue-text-gradient',
             },
             {
-                name: "AWS",
-                color: "green-text-gradient",
+                name: 'AWS',
+                color: 'green-text-gradient',
             },
             {
-                name: "Flask",
-                color: "pink-text-gradient",
+                name: 'Flask',
+                color: 'pink-text-gradient',
             },
         ],
         image: hdxMobile,
 
-        githubLink: "https://github.com/MingliZhang/hdxMobile",
+        githubLink: 'https://github.com/MingliZhang/hdxMobile',
     },
     {
-        name: "Easy Access",
+        name: 'Easy Access',
         description:
-            "A platform for high school students that cannot get enough consultation for college application. The project was brought to me for a coures and passed on to future developers.",
+            'A platform for high school students that cannot get enough consultation for college application. The project was brought to me for a coures and passed on to future developers.',
         tags: [
             {
-                name: "Sails JS",
-                color: "blue-text-gradient",
+                name: 'Sails JS',
+                color: 'blue-text-gradient',
             },
             {
-                name: "React JS",
-                color: "green-text-gradient",
+                name: 'React JS',
+                color: 'green-text-gradient',
             },
             {
-                name: "MongoDB",
-                color: "pink-text-gradient",
+                name: 'MongoDB',
+                color: 'pink-text-gradient',
             },
             {
-                name: "Firebase",
-                color: "red-text-gradient",
+                name: 'Firebase',
+                color: 'red-text-gradient',
             },
         ],
         image: easyAccess,
-        githubLink: "https://github.com/viradsky/EasyAccessCounselor",
+        githubLink: 'https://github.com/viradsky/EasyAccessCounselor',
 
-        site: "https://counselors.easyaccess.education/",
+        site: 'https://counselors.easyaccess.education/',
     },
     {
-        name: "How to get away from Covid 19",
+        name: 'How to get away from Covid 19',
         description:
-            "Project for the 2020 fall Hackathon. Created with three others within 24 hours. The web app consisits of a covide-related game and a physical timer for washing hands.",
+            'Project for the 2020 fall Hackathon. Created with three others within 24 hours. The web app consisits of a covide-related game and a physical timer for washing hands.',
         tags: [
             {
-                name: "Sails JS",
-                color: "blue-text-gradient",
+                name: 'Sails JS',
+                color: 'blue-text-gradient',
             },
             {
-                name: "React JS",
-                color: "green-text-gradient",
+                name: 'React JS',
+                color: 'green-text-gradient',
             },
             {
-                name: "MongoDB",
-                color: "pink-text-gradient",
+                name: 'MongoDB',
+                color: 'pink-text-gradient',
             },
             {
-                name: "Firebase",
-                color: "red-text-gradient",
+                name: 'Firebase',
+                color: 'red-text-gradient',
             },
         ],
         image: covid,
         githubLink:
-            "https://github.com/MingliZhang/How-to-Get-Away-from-Covid-19",
+            'https://github.com/MingliZhang/How-to-Get-Away-from-Covid-19',
     },
     {
-        name: "2048",
+        name: '2048',
         description:
-            "Implemented the classic 2048 game with a game model for modern web development course using the MVC structure design. The entire project took a day to finish and debug.",
+            'Implemented the classic 2048 game with a game model for modern web development course using the MVC structure design. The entire project took a day to finish and debug.',
         tags: [
             {
-                name: "JQuery",
-                color: "blue-text-gradient",
+                name: 'JQuery',
+                color: 'blue-text-gradient',
             },
             {
-                name: "MVC",
-                color: "green-text-gradient",
+                name: 'MVC',
+                color: 'green-text-gradient',
             },
         ],
         image: game,
-        githubLink: "https://github.com/MingliZhang/2048",
+        githubLink: 'https://github.com/MingliZhang/2048',
 
-        site: "https://minglizhang-first.web.app/2048/index.html",
+        site: 'https://minglizhang-first.web.app/2048/index.html',
     },
     {
-        name: "First Portfolio",
+        name: 'First Portfolio',
         description:
-            "My first portfoilo using only HTML, CSS, and vanilla JavaScript. Helped my secure a summer internship at IBM.",
+            'My first portfoilo using only HTML, CSS, and vanilla JavaScript. Helped my secure a summer internship at IBM.',
         tags: [
             {
-                name: "HTML",
-                color: "blue-text-gradient",
+                name: 'HTML',
+                color: 'blue-text-gradient',
             },
             {
-                name: "CSS",
-                color: "green-text-gradient",
+                name: 'CSS',
+                color: 'green-text-gradient',
             },
             {
-                name: "JavaScript",
-                color: "pink-text-gradient",
+                name: 'JavaScript',
+                color: 'pink-text-gradient',
             },
         ],
         image: firstPortfolio,
-        githubLink: "https://github.com/MingliZhang/portfolio",
-        site: "https://minglizhang-first.web.app/",
+        githubLink: 'https://github.com/MingliZhang/portfolio',
+        site: 'https://minglizhang-first.web.app/',
     },
     {
-        name: "Next Portfolio",
+        name: 'Next Portfolio',
         description:
-            "My second portfolio, it was a side project to learn Next.js and tailwindcss by hands on projects. The content is not updated anymore tho.",
+            'My second portfolio, it was a side project to learn Next.js and tailwindcss by hands on projects. The content is not updated anymore tho.',
         tags: [
             {
-                name: "Next JS",
-                color: "blue-text-gradient",
+                name: 'Next JS',
+                color: 'blue-text-gradient',
             },
             {
-                name: "firebase",
-                color: "green-text-gradient",
+                name: 'firebase',
+                color: 'green-text-gradient',
             },
             {
-                name: "TailwindCSS",
-                color: "pink-text-gradient",
+                name: 'TailwindCSS',
+                color: 'pink-text-gradient',
             },
         ],
         image: nextPortfolio,
-        githubLink: "https://github.com/MingliZhang/portfolio-next",
-        site: "https://minglizhang-next.web.app/",
+        githubLink: 'https://github.com/MingliZhang/portfolio-next',
+        site: 'https://minglizhang-next.web.app/',
     },
     {
-        name: "This Portfolio",
+        name: 'This Portfolio',
         description:
-            "The portfolio you are currently viewing. It is more efficient, more elegant interface, and easy to expand.",
+            'The portfolio you are currently viewing. It is more efficient, more elegant interface, and easy to expand.',
         tags: [
             {
-                name: "React",
-                color: "blue-text-gradient",
+                name: 'React',
+                color: 'blue-text-gradient',
             },
             {
-                name: "Email JS",
-                color: "green-text-gradient",
+                name: 'Email JS',
+                color: 'green-text-gradient',
             },
             {
-                name: "TailwindCSS",
-                color: "pink-text-gradient",
+                name: 'TailwindCSS',
+                color: 'pink-text-gradient',
             },
             {
-                name: "Three JS",
-                color: "orange-text-gradient",
+                name: 'Three JS',
+                color: 'orange-text-gradient',
             },
         ],
         image: thisPortfolio,
-        githubLink: "https://github.com/MingliZhang/portfolio-react",
-        site: "https://minglizhang.com/",
+        githubLink: 'https://github.com/MingliZhang/portfolio-react',
+        site: 'https://minglizhang.com/',
     },
 ];
 

@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
-import { testimonials } from "../constants";
+import { styles } from '../styles';
+import { SectionWrapper } from '../hoc';
+import { fadeIn, textVariant } from '../utils/motion';
+import { testimonials } from '../constants';
 
 const FeedbackCard = ({
     index,
@@ -16,30 +16,28 @@ const FeedbackCard = ({
     image,
 }) => {
     const [isReadMore, setIsReadMore] = useState(
-        testimonial.split(" ").length > 20
+        testimonial.split(' ').length > 20
     );
     const toggleReadMore = () => {
         setIsReadMore(!isReadMore);
     };
     return (
         <motion.div
-            variants={fadeIn("", "spring", index * 0.5, 0.75)}
-            className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
-        >
+            variants={fadeIn('', 'spring', index * 0.5, 0.75)}
+            className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full">
             <p className="text-white font-black text-[48px]">"</p>
 
             <div className="mt-1">
                 <p className="text-white tracking-wider text-[18px]">
                     {isReadMore
-                        ? `${testimonial.split(" ").slice(0, 20).join(" ")}...`
+                        ? `${testimonial.split(' ').slice(0, 20).join(' ')}...`
                         : testimonial}
                 </p>
-                {testimonial.split(" ").length > 20 && (
+                {testimonial.split(' ').length > 20 && (
                     <p
                         onClick={toggleReadMore}
-                        className="hover:text-green-300 transition-colors duration-300 font-bold text-lg text-gray-500"
-                    >
-                        {isReadMore ? "read more" : "show less"}
+                        className="hover:text-green-300 transition-colors duration-300 font-bold text-lg text-gray-500">
+                        {isReadMore ? 'read more' : 'show less'}
                     </p>
                 )}
 
@@ -68,16 +66,14 @@ const Feedbacks = () => {
     return (
         <div className={`mt-12 bg-black-100 rounded-[20px]`}>
             <div
-                className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
-            >
+                className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}>
                 <motion.div variants={textVariant()}>
                     <p className={styles.sectionSubText}>What others say</p>
                     <h2 className={styles.sectionHeadText}>Testimonials.</h2>
                 </motion.div>
             </div>
             <div
-                className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}
-            >
+                className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
                 {testimonials.map((testimonial, index) => (
                     <FeedbackCard
                         key={testimonial.name}
@@ -90,4 +86,4 @@ const Feedbacks = () => {
     );
 };
 
-export default SectionWrapper(Feedbacks, "");
+export default SectionWrapper(Feedbacks, '');
