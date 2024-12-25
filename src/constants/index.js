@@ -25,6 +25,7 @@ import {
     ibm,
     threejs,
     championpdiicon,
+    byteDance,
     lenovo,
     firebase,
     C,
@@ -49,7 +50,7 @@ import {
 } from '../assets';
 import { attackReport, newsReport } from '../../documents';
 
-const intro = `I'm a skilled software engineer with experience in full stack web development, mobile application developement, and machine learning. I'm a quick learner and collaborate closely with teammates and clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!`;
+const intro = `I'm a skilled software engineer with experience in full stack development and machine learning engineer. I'm a quick learner and collaborate closely with teammates and clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!`;
 
 export const navLinks = [
     {
@@ -187,6 +188,20 @@ const whiteBg = '#E6DEDD';
 const blackBg = '#383E56';
 
 const experiences = [
+    {
+        title: 'Machine Learning Backend Engineer',
+        company_name: 'ByteDance',
+        icon: byteDance,
+        iconBg: whiteBg,
+        date: 'January 2024 - Present',
+        points: [
+            'Built a Text-to-SQL AI agent with LangChain to automate natural language-to-SQL queries, integrated RAG for schema fetching, and enhanced ByteDance’s network monitoring service, saving hundreds of human hours monthly across all offices by streamlining network diagnostics.',
+            'Developed and fine-tuned computer vision algorithms using YOLO for human detection, DeepSort for people tracking, and Mmpos for action detection to automate server room monitoring across 1,000+ global sites.',
+            'Implemented a network diagnostic AI chatbot for a commercialized product based on Swarm, enabling non-technical users to diagnose network issues by retrieving and analyzing monitoring data, streamlining deployment for small businesses and reducing reliance on network specialists.',
+            'Developed backend services using FastAPI (for Text-to-SQL and Network Diagnostic) and gRPC (for Computer Vision) to expose machine learning models and support client interaction. Implemented authentication, managed deployment, and ensured service health. Led real-time output streaming to enhance user experience and provide instant feedback.',
+            'Collaborate with clients, product managers, and team members to clarify requirements, manage expectations, suggest alternative engineering solutions when needed, and brainstorm optimal approaches, ensuring clear communication and alignment across all stakeholders.',
+        ],
+    },
     {
         title: 'Lead Software Engineer (Part Time)',
         company_name: 'ChampionPDI',

@@ -29,6 +29,7 @@ import lenovo from './company/lenovo.png';
 import ibm from './company/ibm.png';
 import cymantix from './company/cymantix.png';
 import championpdiicon from './company/championpdi.png';
+import byteDance from './company/byteDance.jpg';
 
 import attack from './project/attack.png';
 import CD2030 from './project/CD2030.jpg';
@@ -81,6 +82,7 @@ export {
     attack,
     CD2030,
     championpdi,
+    byteDance,
     covid,
     easyAccess,
     firstPortfolio,

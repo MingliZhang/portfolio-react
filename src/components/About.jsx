@@ -44,6 +44,8 @@ const About = () => {
                 <a
                     className="border-violet-600 bg-transparent border-4 rounded-full hover:border-green-600 text-white font-bold py-4 px-20 text-center transition-color duration-500 "
                     href={resume}
+                    // href="https://github.com/MingliZhang/resume/blob/master/resume.pdf"
+                    download="resume.pdf"
                     target="_blank">
                     Resume
                 </a>
